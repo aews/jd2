@@ -1,0 +1,2714 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+ipv6: false
+log-level: info
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+
+
+proxies:
+  - type: trojan
+    name: 香港511
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: 台湾
+    server: 60.249.114.181
+    port: 10244
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram馃嚚馃嚦 @节点狂魔 /
+  - type: vless
+    name: 韩国
+    server: 222.113.18.214
+    port: 10283
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: 美国
+    server: 138.2.10.217
+    port: 27446
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X @节点狂魔 /
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: 美国_1
+    server: 139.64.235.253
+    port: 2096
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+    client-fingerprint: chrome
+  - type: vless
+    name: 美国_2
+    server: 139.177.185.196
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X @节点狂魔 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: 韩国_1
+    server: 222.113.18.214
+    port: 12158
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: telegram@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: 瑞士
+    server: 64.110.101.90
+    port: 55007
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@节点狂魔/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: hysteria2
+    name: 🇺🇸US_16 | ⬇️ 4.2MB/s
+    server: hsmg.huasuan666.top
+    port: 22151
+    password: 571ec94e-613c-430a-93de-397d3d237475
+    skip-cert-verify: true
+    sni: hsmg.huasuan666.top
+  - type: hysteria2
+    name: 🇺🇸US_17 | ⬇️ 5.0MB/s
+    server: hsxjp.huasuan666.top
+    port: 22154
+    password: 571ec94e-613c-430a-93de-397d3d237475
+    skip-cert-verify: true
+    sni: hsxjp.huasuan666.top
+  - type: vless
+    name: 韩国_2
+    server: 218.151.91.131
+    port: 12151
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /x@节点狂魔/?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: 英国
+    server: 158.180.72.60
+    port: 443
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X🇨🇳 @节点狂魔 /?ed=2560
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: vless
+    name: 美國
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: nspk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: speedtest05
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: trojan
+    name: 香港
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: speedtest036
+    server: ytr.fasssst.ru
+    port: 8443
+    uuid: 762ddd62-0ea8-4a98-bc21-b25fb1c10c3f
+    network: tcp
+    servername: ytr.fasssst.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YRyYaNF4UTgI16yX01Tn-2STbq0yzz7vZ8AMpn7g8zU
+      short-id: 3c92d2fdc884ecaf
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 韓國
+    server: 193.123.230.250
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 俄罗斯
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: nspk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 美国_3
+    server: 152.42.241.71
+    port: 8443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X🇨🇳@节点狂魔/?ed=2560
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美国_4
+    server: 158.178.229.178
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: X🇨🇳@节点狂魔/?ed=2560
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美國_1
+    server: 134.185.93.231
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: Telegram🇨🇳@WangCai2/?ed=2560
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 🇺🇸_US_美国
+    server: www.speedtest.net
+    port: 443
+    uuid: 48caa578-241e-43eb-817f-0854b84b0fb0
+    network: ws
+    servername: conFiG-VOrteX55-AR5.pagES.deV
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /edrlz7qvRheKjll8/MTQ0LjI0LjkwLjEwNw==?ed=2560fp=randomized
+      headers:
+        Host: conFiG-VOrteX55-AR5.pagES.deV
+    client-fingerprint: chrome
+  - type: trojan
+    name: 🇺🇸_US_美国_1
+    server: 104.26.12.31
+    port: 8443
+    password: trojan
+    network: ws
+    sni: fofang.pages.dev
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: fofang.pages.dev
+  - type: vless
+    name: 🇺🇸_US_美国_2
+    server: 104.17.147.22
+    port: 8080
+    uuid: Parsashonam-Bot-34
+    network: ws
+    servername: Fi.Parsashonam.CfD.
+    encryption: none
+    ws-opts:
+      path: /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
+      headers:
+        Host: Fi.Parsashonam.CfD.
+  - type: hysteria2
+    name: 🇺🇸 美国 054
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: cfcf03a2-054e-4a91-9858-4dc457931e88
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: hysteria2
+    name: 🇺🇸 美国 166
+    server: eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk
+    port: 1743
+    password: 1b609740-eec2-11ef-8543-f23c93136cb3
+  - type: hysteria2
+    name: 🇺🇸 美国 167
+    server: ea9466bf-t3dk00-t3i5yp-b4pt.la.shifen.uk
+    port: 1743
+    password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  - type: hysteria2
+    name: 🇺🇸 美国 038
+    server: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
+    port: 1743
+    password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  - type: hysteria2
+    name: 🇺🇸 美国 106
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: 8727de34-435d-4d00-8e88-ca2a6232ea93
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: vless
+    name: 🇭🇰 香港 45
+    server: 36.50.90.241
+    port: 35951
+    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+    network: ws
+    servername: gaosir.unfeeling.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /X@节点狂魔/
+      headers:
+        Host: gaosir.unfeeling.sbs
+  - type: hysteria2
+    name: 🇺🇸 美国 025
+    server: 3d2c11f1-t52o00-tdw2ye-2gok.la.shifen.uk
+    port: 1743
+    password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+  - type: hysteria2
+    name: 🇺🇸 美国 100
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: e6c931d0-1b38-4316-855e-2bfe752208bc
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: hysteria2
+    name: 🇺🇸 美国 099
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: 22569b14-ad94-4a9c-82f1-3f4e3cf6af77
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: hysteria2
+    name: 🇺🇸 美国 058
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: 3a68480d-d6c9-466b-84e7-1cb3f4024b7c
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: hysteria2
+    name: 🇺🇸 美国 039
+    server: cc65f71a-t4v9c0-t5waci-4550.la.shifen.uk
+    port: 1743
+    password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  - type: hysteria2
+    name: 🇺🇸 美国 165
+    server: dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk
+    port: 1743
+    password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  - type: hysteria2
+    name: 🇺🇸 美国 161
+    server: 6e206c57-t3b340-tcj7b6-d70y.la.shifen.uk
+    port: 1743
+    password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  - type: hysteria2
+    name: 🇺🇸 美国 074
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: 68591e3f-d28e-4f28-928a-092ba4343285
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: hysteria2
+    name: 🇺🇸 美国 084
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: c689428b-ee4f-4cd7-a8d1-13adc99e0163
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: hysteria2
+    name: 🇺🇸 美国 168
+    server: c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk
+    port: 1743
+    password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+  - type: trojan
+    name: 香港+电讯盈科有限公司
+    server: 58.152.53.3
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港5
+    server: 58.152.53.3
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: 澳大利亚
+    server: 140.83.57.20
+    port: 13118
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 澳大利亚_1
+    server: 140.83.57.183
+    port: 22735
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 俄罗斯_1
+    server: 193.123.230.250
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 俄罗斯_2
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: nspk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_3
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_4
+    server: 109.172.54.49
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: ZYRpBcSSAGtXIKqjHqZbdbp4WpxwVvuWLSXufsf0-3w
+      short-id: 1aa49d75
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_5
+    server: ytr.fasssst.ru
+    port: 8443
+    uuid: 762ddd62-0ea8-4a98-bc21-b25fb1c10c3f
+    network: tcp
+    servername: ytr.fasssst.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YRyYaNF4UTgI16yX01Tn-2STbq0yzz7vZ8AMpn7g8zU
+      short-id: 3c92d2fdc884ecaf
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_6
+    server: 194.127.193.240
+    port: 50791
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /节点狂魔@节点狂魔/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 俄罗斯_7
+    server: 5.34.176.119
+    port: 81
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 俄罗斯_8
+    server: 95.164.6.65
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 俄罗斯_9
+    server: 95.164.6.65
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 俄罗斯_10
+    server: ytr.fasssst.ru
+    port: 8443
+    uuid: 762ddd62-0ea8-4a98-bc21-b25fb1c10c3f
+    network: tcp
+    servername: ytr.fasssst.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YRyYaNF4UTgI16yX01Tn-2STbq0yzz7vZ8AMpn7g8zU
+      short-id: 3c92d2fdc884ecaf
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_11
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: nspk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_12
+    server: 95.164.6.26
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 韩国_3
+    server: 152.69.229.175
+    port: 22558
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 韩国_4
+    server: 193.123.230.250
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 韩国_5
+    server: 106.244.201.248
+    port: 50000
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /节点狂魔@节点狂魔/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美国_5
+    server: 45.66.128.117
+    port: 10016
+    uuid: b5544203-55e3-426e-92f1-0684c93f9829
+    network: ws
+    servername: snippet.danfeng.site
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: snippet.danfeng.site
+  - type: vless
+    name: 美国_6
+    server: 217.142.250.195
+    port: 587
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美国_7
+    server: 64.110.106.47
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美国_8
+    server: 45.66.128.117
+    port: 10016
+    uuid: b5544203-55e3-426e-92f1-0684c93f9829
+    network: ws
+    servername: snippet.danfeng.site
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /
+      headers:
+        Host: snippet.danfeng.site
+  - type: vless
+    name: 美国_9
+    server: 217.142.236.93
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美国_10
+    server: 152.69.229.175
+    port: 22558
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: hysteria2
+    name: 美国_11
+    server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+    port: 54265
+    password: d14c6979-ca3b-4c0c-ada1-e45ec6f814bf
+    skip-cert-verify: true
+    sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  - type: vless
+    name: 美国_12
+    server: 138.2.32.76
+    port: 15821
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 美国_13
+    server: 216.133.148.215
+    port: 36987
+    uuid: 0f4f3a75-ae36-4992-8cb5-6638f45afcb2
+    network: tcp
+    encryption: none
+  - type: vless
+    name: 日本
+    server: 172.105.208.156
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_1
+    server: 168.138.197.147
+    port: 12345
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_2
+    server: 217.142.250.195
+    port: 587
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_3
+    server: 140.83.57.183
+    port: 22735
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_4
+    server: 140.83.57.20
+    port: 13118
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_5
+    server: 217.142.250.195
+    port: 587
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_6
+    server: 138.2.32.76
+    port: 15821
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_7
+    server: 168.138.197.147
+    port: 12345
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram@freecodes/
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 日本_8
+    server: 217.142.236.93
+    port: 443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 瑞士_1
+    server: www.visaeurope.ch
+    port: 443
+    uuid: ce8b479d-ade1-414d-9eec-f53a80393b7d
+    network: ws
+    servername: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /ws
+      headers:
+        Host: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
+  - type: trojan
+    name: 台湾_1
+    server: 125.227.86.44
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_2
+    server: 125.227.86.44
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_3
+    server: 125.227.86.47
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_4
+    server: 125.227.86.48
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_5
+    server: 125.227.86.48
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_6
+    server: 125.227.86.46
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.WangCai2
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_7
+    server: 125.227.86.45
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.WangCai2
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_8
+    server: 125.227.86.46
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_9
+    server: 125.227.86.44
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_10
+    server: 125.227.86.47
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_11
+    server: 125.227.86.44
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: vless
+    name: 希腊
+    server: 185.39.207.121
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
+      short-id: 0fa84b90
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 希腊_1
+    server: 185.39.207.121
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
+      short-id: 0fa84b90
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: trojan
+    name: 香港_1
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: 58.152.46.98
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_2
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: 香港_3
+    server: 58.151.107.230
+    port: 24442
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @节点狂魔 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: trojan
+    name: 香港_4
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_5
+    server: 58.152.53.3
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_6
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: 58.152.46.98
+    skip-cert-verify: true
+    fingerprint: chrome
+    tls: true
+  - type: trojan
+    name: 香港_7
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: 58.152.46.98
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: 新加坡
+    server: 152.42.241.71
+    port: 8443
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: vless
+    name: 新加坡_1
+    server: 5.34.176.119
+    port: 81
+    uuid: 64bf9c97-212c-4814-ad17-f8539b53a8bd
+    network: ws
+    servername: vless.pengjiajin.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /Telegram🇨🇳 @WangCai2 /
+      headers:
+        Host: vless.pengjiajin.sbs
+  - type: trojan
+    name: speedtest121
+    server: 58.152.46.98
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: 58.152.46.98
+    skip-cert-verify: true
+    fingerprint: chrome
+    tls: true
+  - type: vless
+    name: speedtest122
+    server: 638969264971590621.abadan-blkaft-aaaw.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: speedtest123
+    server: 638966574572431911.rome-blkaft-aaau.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: speedtest124
+    server: 638966574572431911.rome-blkaft-aaau.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: speedtest125
+    server: 638970136771547794.athens-blkaft-aaay.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: trojan
+    name: 美国_14
+    server: bestcdn4.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000462495.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /videomuaawe
+      headers:
+        Host: 17618000469389.92510233.xyz
+  - type: trojan
+    name: 美国_15
+    server: bestcdn4.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000461185.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000465190.92510233.xyz
+  - type: trojan
+    name: 美国_16
+    server: bestcdn4.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000461347.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000467638.92510233.xyz
+  - type: trojan
+    name: 美国_17
+    server: bestcdn4.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000462040.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000465968.92510233.xyz
+  - type: trojan
+    name: 美国_18
+    server: bestcdn4.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000469223.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000468307.92510233.xyz
+  - type: trojan
+    name: 美国_19
+    server: bestcdn1.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000462586.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000468985.92510233.xyz
+  - type: trojan
+    name: 美国_20
+    server: bestcdn1.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000469400.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000467838.92510233.xyz
+  - type: trojan
+    name: 美国_21
+    server: bestcdn1.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000463870.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000462346.92510233.xyz
+  - type: trojan
+    name: 美国_22
+    server: bestcdn1.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000468705.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000464612.92510233.xyz
+  - type: trojan
+    name: 美国_23
+    server: bestcdn1.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000466559.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agraeabtegrrh
+      headers:
+        Host: 17618000469410.92510233.xyz
+  - type: vmess
+    name: 美国_24
+    server: bestcdn1.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000465658.no.92510234.xyz
+    ws-opts:
+      path: /tguntu
+      headers:
+        Host: 17618000465658.no.92510234.xyz
+  - type: vmess
+    name: 美国_25
+    server: bestcdn1.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000461255.no.92510234.xyz
+    ws-opts:
+      path: /tguntu
+      headers:
+        Host: 17618000461255.no.92510234.xyz
+  - type: vmess
+    name: 美国_26
+    server: bestcdn1.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000464354.no.92510234.xyz
+    ws-opts:
+      path: /tguntu
+      headers:
+        Host: 17618000464354.no.92510234.xyz
+  - type: vmess
+    name: 美国_27
+    server: bestcdn1.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000463378.no.92510234.xyz
+    ws-opts:
+      path: /tguntu
+      headers:
+        Host: 17618000463378.no.92510234.xyz
+  - type: trojan
+    name: 美国_28
+    server: bestcdn2.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000467284.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000461715.92510233.xyz
+  - type: trojan
+    name: 美国_29
+    server: bestcdn2.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000468309.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000463418.92510233.xyz
+  - type: trojan
+    name: 美国_30
+    server: bestcdn2.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000466713.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000466028.92510233.xyz
+  - type: trojan
+    name: 美国_31
+    server: bestcdn2.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000466910.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000468852.92510233.xyz
+  - type: trojan
+    name: 美国_32
+    server: bestcdn2.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000461370.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /agrbniuh
+      headers:
+        Host: 17618000466185.92510233.xyz
+  - type: vmess
+    name: 美国_33
+    server: bestcdn2.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000462602.no.92510234.xyz
+    ws-opts:
+      path: /aerwiueh
+      headers:
+        Host: 17618000462602.no.92510234.xyz
+  - type: vmess
+    name: 美国_34
+    server: bestcdn2.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000469856.no.92510234.xyz
+    ws-opts:
+      path: /aerwiueh
+      headers:
+        Host: 17618000469856.no.92510234.xyz
+  - type: vmess
+    name: 美国_35
+    server: bestcdn2.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000464496.no.92510234.xyz
+    ws-opts:
+      path: /aerwiueh
+      headers:
+        Host: 17618000464496.no.92510234.xyz
+  - type: vmess
+    name: 美国_36
+    server: bestcdn2.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000468552.no.92510234.xyz
+    ws-opts:
+      path: /aerwiueh
+      headers:
+        Host: 17618000468552.no.92510234.xyz
+  - type: vmess
+    name: 美国_37
+    server: bestcdn2.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000461037.no.92510234.xyz
+    ws-opts:
+      path: /aerwiueh
+      headers:
+        Host: 17618000461037.no.92510234.xyz
+  - type: trojan
+    name: 美国_38
+    server: bestcdn3.868863.xyz
+    port: 443
+    password: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    network: ws
+    sni: 17618000463099.92510233.xyz
+    tls: true
+    ws-opts:
+      path: /videomuaawe
+      headers:
+        Host: 17618000465729.92510233.xyz
+  - type: vmess
+    name: 美国_39
+    server: bestcdn3.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000462780.no.92510234.xyz
+    ws-opts:
+      path: /htehehehn
+      headers:
+        Host: 17618000462780.no.92510234.xyz
+  - type: vmess
+    name: 美国_40
+    server: bestcdn3.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000465492.no.92510234.xyz
+    ws-opts:
+      path: /htehehehn
+      headers:
+        Host: 17618000465492.no.92510234.xyz
+  - type: vmess
+    name: 美国_41
+    server: bestcdn3.868863.xyz
+    port: 80
+    uuid: 9ea00c64-ac8d-40a2-89be-e10a285ea027
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 17618000462416.no.92510234.xyz
+    ws-opts:
+      path: /htehehehn
+      headers:
+        Host: 17618000462416.no.92510234.xyz
+  - type: vless
+    name: 🇺🇸美国圣何塞3 | 高速专线
+    server: 152.67.252.51
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: iosapps.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: R9XBNwo5Bw-ePY9QGScdwbmranjFrpnnBhkIWD6wOhk
+      short-id: e97b261b
+    client-fingerprint: safari
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇺🇸美国圣何塞2 | 高速专线
+    server: 146.235.193.81
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: iosapps.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Xd2u-uX0dhiJrB_ESaDSoQBmT6Jv1tEmqn3inOiYFDg
+      short-id: 207a3de5
+    client-fingerprint: safari
+    flow: xtls-rprx-vision
+  - type: hysteria2
+    name: 🇺🇸美国阿什本2 | 高速专线-hy2
+    server: 141.148.30.165
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.lamer.com.hk
+  - type: hysteria2
+    name: 🇺🇸美国阿什本 | 高速专线-hy2
+    server: 129.153.25.59
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.lamer.com.hk
+  - type: hysteria2
+    name: 🇺🇸美国02-0.1倍 | 高速专线-hy2
+    server: 208.87.242.97
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.apple.com
+  - type: hysteria2
+    name: 🇺🇸美国│0.5x│免费│高速 02
+    server: node-ipv4-us-002.nylz.dpdns.org
+    port: 50002
+    password: feaa26be-59a4-4b0b-801e-678a2029b0af
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: AHeJHyz2bfUAZdaD
+    sni: www.cloudflare.com
+  - type: hysteria2
+    name: 🇰🇷韩国2 | 高速专线-hy2
+    server: 146.56.146.234
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.apple.com
+  - type: hysteria2
+    name: 🇰🇷韩国 | 高速专线-hy2
+    server: 146.56.150.104
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.apple.com
+  - type: vless
+    name: 🇰🇷韩国 | 高速专线
+    server: 146.56.158.145
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: www.lamer.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: j5tsCQhMqefjOq-shVxsZS195S4R7Ce_prmT8yFsvm8
+      short-id: d02456fe
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇯🇵日本东京04 | 高速四网推荐
+    server: kb.vmjp.yydjc.top
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: iosapps.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
+      short-id: bb9ab0d5242d53e9
+    client-fingerprint: ios
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇯🇵日本东京03 | 高速四网推荐
+    server: kb.vmjp.yydjc.top
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: iosapps.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
+      short-id: bb9ab0d5242d53e9
+    client-fingerprint: safari
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇯🇵日本东京02 | 高速四网推荐
+    server: kb.vmjp.yydjc.top
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: iosapps.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
+      short-id: bb9ab0d5242d53e9
+    client-fingerprint: ios
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇯🇵日本东京01 | 高速四网推荐
+    server: kb.vmjp.yydjc.top
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: iosapps.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: yzIdIf5RpR-rTzlULRjJoCgcQdx3-yXKl7eT7IuThn4
+      short-id: bb9ab0d5242d53e9
+    client-fingerprint: edge
+    flow: xtls-rprx-vision
+  - type: hysteria2
+    name: 🇭🇰香港│2.5x│免费│高速 01
+    server: node-ipv4-hk-002.nylz.dpdns.org
+    port: 12690
+    password: feaa26be-59a4-4b0b-801e-678a2029b0af
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: yBfrM4VQYQG9owdy
+    sni: dash.cloudflare.com
+  - type: hysteria2
+    name: 🇫🇷法国马赛 | 高速专线-hy2
+    server: 129.151.251.122
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.lamer.com.hk
+  - type: vless
+    name: 🇫🇷法国 | 0.1倍
+    server: 69.84.182.13
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: ws
+    servername: fr-1-fr-1.aiopen.sbs
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /kbjc/fr1
+      headers:
+        Host: fr-1-fr-1.aiopen.sbs
+    client-fingerprint: chrome
+  - type: hysteria2
+    name: 🇪🇸西班牙 | 高速专线-hy2
+    server: 143.47.32.143
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.lamer.com.hk
+  - type: hysteria2
+    name: 🇩🇪德国│0.5x│免费│高速 01
+    server: node-ipv4-de-001.nylz.dpdns.org
+    port: 50002
+    password: feaa26be-59a4-4b0b-801e-678a2029b0af
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: 1WHvwbb7lzCU3Vro
+    sni: www.cloudflare.com
+  - type: hysteria2
+    name: 🇩🇪德国│0.5x│免费│高速 01_1
+    server: node-ipv4-de-001.nylz.dpdns.org
+    port: 50002
+    password: 3533583f-f6c4-407c-8162-2020bc3f6742
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: 1WHvwbb7lzCU3Vro
+    sni: www.cloudflare.com
+  - type: vless
+    name: 🇩🇪德国 | 高速专线
+    server: 130.162.220.137
+    port: 443
+    uuid: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    network: tcp
+    servername: www.lamer.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: UV34T0S_VyVcChA2Tb9MIbg4tr1mHGMr_Lw5Gvb17F8
+      short-id: 66ed2fdd
+    client-fingerprint: safari
+    flow: xtls-rprx-vision
+  - type: hysteria2
+    name: 🇧🇷巴西 | 高速专线-hy2
+    server: 167.234.251.78
+    port: 443
+    ports: 35000-39000
+    password: dc6a6c45-b13c-4f1d-8729-19b4d8bba4aa
+    skip-cert-verify: true
+    sni: www.apple.com
+  - type: trojan
+    name: 台湾_12
+    server: 125.227.86.46
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_13
+    server: 125.227.86.48
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_14
+    server: 125.227.86.46
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.WangCai2
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_15
+    server: 125.227.86.48
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_16
+    server: 125.227.86.44
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: US
+    server: nop-55q.pages.dev
+    port: 2053
+    password: T%40_WvT8Ho%40LW%25w_%2C
+    network: ws
+    sni: NOp-55q.pAgEs.dEv
+    tls: true
+    ws-opts:
+      path: /trGPZDfetEwuO25SAs
+      headers:
+        Host: NOp-55q.pAgEs.dEv
+  - type: trojan
+    name: 台湾_17
+    server: 125.227.86.47
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: vless
+    name: 俄罗斯_13
+    server: 81.19.140.131
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 18otPJIOnisNtfhP_PxpdJgPYqFbkYQAM-pecy90xwk
+      short-id: 5ec229f9
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 希腊_2
+    server: 185.39.207.121
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: Mjz6Gz75xTMe9ZU08h0y-A_VgRQ6tnt3qoOzdEn1k1M
+      short-id: 0fa84b90
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: trojan
+    name: 台湾_18
+    server: 125.227.86.47
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.WangCai2
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: vless
+    name: 俄罗斯_14
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: nspk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 美国_42
+    server: ytr.fasssst.ru
+    port: 8443
+    uuid: 762ddd62-0ea8-4a98-bc21-b25fb1c10c3f
+    network: tcp
+    servername: ytr.fasssst.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YRyYaNF4UTgI16yX01Tn-2STbq0yzz7vZ8AMpn7g8zU
+      short-id: 3c92d2fdc884ecaf
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_15
+    server: 95.164.6.65
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 美国_43
+    server: 638966574572431911.rome-blkaft-aaau.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 美国_44
+    server: 95.164.6.26
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 美国_45
+    server: 212.18.104.19
+    port: 443
+    uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
+    network: tcp
+    servername: vk.cc
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 9tpeVTkuJ5il6GaLG9YqMn99OK8AFlzgEFtoD1_MkyI
+      short-id: f8c64c7a
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 美国_46
+    server: 638970136771547794.athens-blkaft-aaay.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: vless
+    name: 俄罗斯_16
+    server: 89.221.224.239
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: ss
+    name: 美国_47
+    server: sl.fgmcx.top
+    port: 41047
+    cipher: chacha20-ietf-poly1305
+    password: 014e90df-a3ee-4654-a9f6-d118e02dd02a
+  - type: vless
+    name: 美国_48
+    server: www.visaeurope.ch
+    port: 443
+    uuid: ce8b479d-ade1-414d-9eec-f53a80393b7d
+    network: ws
+    servername: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /ws
+      headers:
+        Host: rAyAn-cOnFiG-de-1.pArSa.dPdNs.oRg
+  - type: vmess
+    name: 美国_49
+    server: 104.18.240.238
+    port: 80
+    uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    ws-opts:
+      path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM
+        (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  - type: trojan
+    name: 台湾_19
+    server: 125.227.86.44
+    port: 443
+    password: 0a9f1f5a397bd427
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 香港_8
+    server: 58.152.53.3
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: vless
+    name: 美国_50
+    server: 638969264971590621.abadan-blkaft-aaaw.info
+    port: 8880
+    uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+    network: grpc
+    encryption: none
+  - type: trojan
+    name: 台湾_20
+    server: 125.227.86.45
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.WangCai2
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+  - type: trojan
+    name: 台湾_21
+    server: 125.227.86.45
+    port: 443
+    password: 3f5bc61547b1f0d9
+    network: grpc
+    sni: TG.节点狂魔
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    grpc-opts:
+      grpc-service-name: db
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 香港511
+      - 台湾
+      - 韩国
+      - 美国
+      - 美国_1
+      - 美国_2
+      - 韩国_1
+      - 瑞士
+      - 🇺🇸US_16 | ⬇️ 4.2MB/s
+      - 🇺🇸US_17 | ⬇️ 5.0MB/s
+      - 韩国_2
+      - 英国
+      - 美國
+      - speedtest05
+      - 香港
+      - speedtest036
+      - 韓國
+      - 俄罗斯
+      - 美国_3
+      - 美国_4
+      - 美國_1
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸 美国 054
+      - 🇺🇸 美国 166
+      - 🇺🇸 美国 167
+      - 🇺🇸 美国 038
+      - 🇺🇸 美国 106
+      - 🇭🇰 香港 45
+      - 🇺🇸 美国 025
+      - 🇺🇸 美国 100
+      - 🇺🇸 美国 099
+      - 🇺🇸 美国 058
+      - 🇺🇸 美国 039
+      - 🇺🇸 美国 165
+      - 🇺🇸 美国 161
+      - 🇺🇸 美国 074
+      - 🇺🇸 美国 084
+      - 🇺🇸 美国 168
+      - 香港+电讯盈科有限公司
+      - 香港5
+      - 澳大利亚
+      - 澳大利亚_1
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄罗斯_4
+      - 俄罗斯_5
+      - 俄罗斯_6
+      - 俄罗斯_7
+      - 俄罗斯_8
+      - 俄罗斯_9
+      - 俄罗斯_10
+      - 俄罗斯_11
+      - 俄罗斯_12
+      - 韩国_3
+      - 韩国_4
+      - 韩国_5
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 美国_8
+      - 美国_9
+      - 美国_10
+      - 美国_11
+      - 美国_12
+      - 美国_13
+      - 日本
+      - 日本_1
+      - 日本_2
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 日本_6
+      - 日本_7
+      - 日本_8
+      - 瑞士_1
+      - 台湾_1
+      - 台湾_2
+      - 台湾_3
+      - 台湾_4
+      - 台湾_5
+      - 台湾_6
+      - 台湾_7
+      - 台湾_8
+      - 台湾_9
+      - 台湾_10
+      - 台湾_11
+      - 希腊
+      - 希腊_1
+      - 香港_1
+      - 香港_2
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - 香港_6
+      - 香港_7
+      - 新加坡
+      - 新加坡_1
+      - speedtest121
+      - speedtest122
+      - speedtest123
+      - speedtest124
+      - speedtest125
+      - 美国_14
+      - 美国_15
+      - 美国_16
+      - 美国_17
+      - 美国_18
+      - 美国_19
+      - 美国_20
+      - 美国_21
+      - 美国_22
+      - 美国_23
+      - 美国_24
+      - 美国_25
+      - 美国_26
+      - 美国_27
+      - 美国_28
+      - 美国_29
+      - 美国_30
+      - 美国_31
+      - 美国_32
+      - 美国_33
+      - 美国_34
+      - 美国_35
+      - 美国_36
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 美国_40
+      - 美国_41
+      - 🇺🇸美国圣何塞3 | 高速专线
+      - 🇺🇸美国圣何塞2 | 高速专线
+      - 🇺🇸美国阿什本2 | 高速专线-hy2
+      - 🇺🇸美国阿什本 | 高速专线-hy2
+      - 🇺🇸美国02-0.1倍 | 高速专线-hy2
+      - 🇺🇸美国│0.5x│免费│高速 02
+      - 🇰🇷韩国2 | 高速专线-hy2
+      - 🇰🇷韩国 | 高速专线-hy2
+      - 🇰🇷韩国 | 高速专线
+      - 🇯🇵日本东京04 | 高速四网推荐
+      - 🇯🇵日本东京03 | 高速四网推荐
+      - 🇯🇵日本东京02 | 高速四网推荐
+      - 🇯🇵日本东京01 | 高速四网推荐
+      - 🇭🇰香港│2.5x│免费│高速 01
+      - 🇫🇷法国马赛 | 高速专线-hy2
+      - 🇫🇷法国 | 0.1倍
+      - 🇪🇸西班牙 | 高速专线-hy2
+      - 🇩🇪德国│0.5x│免费│高速 01
+      - 🇩🇪德国│0.5x│免费│高速 01_1
+      - 🇩🇪德国 | 高速专线
+      - 🇧🇷巴西 | 高速专线-hy2
+      - 台湾_12
+      - 台湾_13
+      - 台湾_14
+      - 台湾_15
+      - 台湾_16
+      - US
+      - 台湾_17
+      - 俄罗斯_13
+      - 希腊_2
+      - 台湾_18
+      - 俄罗斯_14
+      - 美国_42
+      - 俄罗斯_15
+      - 美国_43
+      - 美国_44
+      - 美国_45
+      - 美国_46
+      - 俄罗斯_16
+      - 美国_47
+      - 美国_48
+      - 美国_49
+      - 台湾_19
+      - 香港_8
+      - 美国_50
+      - 台湾_20
+      - 台湾_21
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - 香港511
+      - 台湾
+      - 韩国
+      - 美国
+      - 美国_1
+      - 美国_2
+      - 韩国_1
+      - 瑞士
+      - 🇺🇸US_16 | ⬇️ 4.2MB/s
+      - 🇺🇸US_17 | ⬇️ 5.0MB/s
+      - 韩国_2
+      - 英国
+      - 美國
+      - speedtest05
+      - 香港
+      - speedtest036
+      - 韓國
+      - 俄罗斯
+      - 美国_3
+      - 美国_4
+      - 美國_1
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸 美国 054
+      - 🇺🇸 美国 166
+      - 🇺🇸 美国 167
+      - 🇺🇸 美国 038
+      - 🇺🇸 美国 106
+      - 🇭🇰 香港 45
+      - 🇺🇸 美国 025
+      - 🇺🇸 美国 100
+      - 🇺🇸 美国 099
+      - 🇺🇸 美国 058
+      - 🇺🇸 美国 039
+      - 🇺🇸 美国 165
+      - 🇺🇸 美国 161
+      - 🇺🇸 美国 074
+      - 🇺🇸 美国 084
+      - 🇺🇸 美国 168
+      - 香港+电讯盈科有限公司
+      - 香港5
+      - 澳大利亚
+      - 澳大利亚_1
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄罗斯_4
+      - 俄罗斯_5
+      - 俄罗斯_6
+      - 俄罗斯_7
+      - 俄罗斯_8
+      - 俄罗斯_9
+      - 俄罗斯_10
+      - 俄罗斯_11
+      - 俄罗斯_12
+      - 韩国_3
+      - 韩国_4
+      - 韩国_5
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 美国_8
+      - 美国_9
+      - 美国_10
+      - 美国_11
+      - 美国_12
+      - 美国_13
+      - 日本
+      - 日本_1
+      - 日本_2
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 日本_6
+      - 日本_7
+      - 日本_8
+      - 瑞士_1
+      - 台湾_1
+      - 台湾_2
+      - 台湾_3
+      - 台湾_4
+      - 台湾_5
+      - 台湾_6
+      - 台湾_7
+      - 台湾_8
+      - 台湾_9
+      - 台湾_10
+      - 台湾_11
+      - 希腊
+      - 希腊_1
+      - 香港_1
+      - 香港_2
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - 香港_6
+      - 香港_7
+      - 新加坡
+      - 新加坡_1
+      - speedtest121
+      - speedtest122
+      - speedtest123
+      - speedtest124
+      - speedtest125
+      - 美国_14
+      - 美国_15
+      - 美国_16
+      - 美国_17
+      - 美国_18
+      - 美国_19
+      - 美国_20
+      - 美国_21
+      - 美国_22
+      - 美国_23
+      - 美国_24
+      - 美国_25
+      - 美国_26
+      - 美国_27
+      - 美国_28
+      - 美国_29
+      - 美国_30
+      - 美国_31
+      - 美国_32
+      - 美国_33
+      - 美国_34
+      - 美国_35
+      - 美国_36
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 美国_40
+      - 美国_41
+      - 🇺🇸美国圣何塞3 | 高速专线
+      - 🇺🇸美国圣何塞2 | 高速专线
+      - 🇺🇸美国阿什本2 | 高速专线-hy2
+      - 🇺🇸美国阿什本 | 高速专线-hy2
+      - 🇺🇸美国02-0.1倍 | 高速专线-hy2
+      - 🇺🇸美国│0.5x│免费│高速 02
+      - 🇰🇷韩国2 | 高速专线-hy2
+      - 🇰🇷韩国 | 高速专线-hy2
+      - 🇰🇷韩国 | 高速专线
+      - 🇯🇵日本东京04 | 高速四网推荐
+      - 🇯🇵日本东京03 | 高速四网推荐
+      - 🇯🇵日本东京02 | 高速四网推荐
+      - 🇯🇵日本东京01 | 高速四网推荐
+      - 🇭🇰香港│2.5x│免费│高速 01
+      - 🇫🇷法国马赛 | 高速专线-hy2
+      - 🇫🇷法国 | 0.1倍
+      - 🇪🇸西班牙 | 高速专线-hy2
+      - 🇩🇪德国│0.5x│免费│高速 01
+      - 🇩🇪德国│0.5x│免费│高速 01_1
+      - 🇩🇪德国 | 高速专线
+      - 🇧🇷巴西 | 高速专线-hy2
+      - 台湾_12
+      - 台湾_13
+      - 台湾_14
+      - 台湾_15
+      - 台湾_16
+      - US
+      - 台湾_17
+      - 俄罗斯_13
+      - 希腊_2
+      - 台湾_18
+      - 俄罗斯_14
+      - 美国_42
+      - 俄罗斯_15
+      - 美国_43
+      - 美国_44
+      - 美国_45
+      - 美国_46
+      - 俄罗斯_16
+      - 美国_47
+      - 美国_48
+      - 美国_49
+      - 台湾_19
+      - 香港_8
+      - 美国_50
+      - 台湾_20
+      - 台湾_21
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 香港511
+      - 台湾
+      - 韩国
+      - 美国
+      - 美国_1
+      - 美国_2
+      - 韩国_1
+      - 瑞士
+      - 🇺🇸US_16 | ⬇️ 4.2MB/s
+      - 🇺🇸US_17 | ⬇️ 5.0MB/s
+      - 韩国_2
+      - 英国
+      - 美國
+      - speedtest05
+      - 香港
+      - speedtest036
+      - 韓國
+      - 俄罗斯
+      - 美国_3
+      - 美国_4
+      - 美國_1
+      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国_1
+      - 🇺🇸_US_美国_2
+      - 🇺🇸 美国 054
+      - 🇺🇸 美国 166
+      - 🇺🇸 美国 167
+      - 🇺🇸 美国 038
+      - 🇺🇸 美国 106
+      - 🇭🇰 香港 45
+      - 🇺🇸 美国 025
+      - 🇺🇸 美国 100
+      - 🇺🇸 美国 099
+      - 🇺🇸 美国 058
+      - 🇺🇸 美国 039
+      - 🇺🇸 美国 165
+      - 🇺🇸 美国 161
+      - 🇺🇸 美国 074
+      - 🇺🇸 美国 084
+      - 🇺🇸 美国 168
+      - 香港+电讯盈科有限公司
+      - 香港5
+      - 澳大利亚
+      - 澳大利亚_1
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 俄罗斯_4
+      - 俄罗斯_5
+      - 俄罗斯_6
+      - 俄罗斯_7
+      - 俄罗斯_8
+      - 俄罗斯_9
+      - 俄罗斯_10
+      - 俄罗斯_11
+      - 俄罗斯_12
+      - 韩国_3
+      - 韩国_4
+      - 韩国_5
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 美国_8
+      - 美国_9
+      - 美国_10
+      - 美国_11
+      - 美国_12
+      - 美国_13
+      - 日本
+      - 日本_1
+      - 日本_2
+      - 日本_3
+      - 日本_4
+      - 日本_5
+      - 日本_6
+      - 日本_7
+      - 日本_8
+      - 瑞士_1
+      - 台湾_1
+      - 台湾_2
+      - 台湾_3
+      - 台湾_4
+      - 台湾_5
+      - 台湾_6
+      - 台湾_7
+      - 台湾_8
+      - 台湾_9
+      - 台湾_10
+      - 台湾_11
+      - 希腊
+      - 希腊_1
+      - 香港_1
+      - 香港_2
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - 香港_6
+      - 香港_7
+      - 新加坡
+      - 新加坡_1
+      - speedtest121
+      - speedtest122
+      - speedtest123
+      - speedtest124
+      - speedtest125
+      - 美国_14
+      - 美国_15
+      - 美国_16
+      - 美国_17
+      - 美国_18
+      - 美国_19
+      - 美国_20
+      - 美国_21
+      - 美国_22
+      - 美国_23
+      - 美国_24
+      - 美国_25
+      - 美国_26
+      - 美国_27
+      - 美国_28
+      - 美国_29
+      - 美国_30
+      - 美国_31
+      - 美国_32
+      - 美国_33
+      - 美国_34
+      - 美国_35
+      - 美国_36
+      - 美国_37
+      - 美国_38
+      - 美国_39
+      - 美国_40
+      - 美国_41
+      - 🇺🇸美国圣何塞3 | 高速专线
+      - 🇺🇸美国圣何塞2 | 高速专线
+      - 🇺🇸美国阿什本2 | 高速专线-hy2
+      - 🇺🇸美国阿什本 | 高速专线-hy2
+      - 🇺🇸美国02-0.1倍 | 高速专线-hy2
+      - 🇺🇸美国│0.5x│免费│高速 02
+      - 🇰🇷韩国2 | 高速专线-hy2
+      - 🇰🇷韩国 | 高速专线-hy2
+      - 🇰🇷韩国 | 高速专线
+      - 🇯🇵日本东京04 | 高速四网推荐
+      - 🇯🇵日本东京03 | 高速四网推荐
+      - 🇯🇵日本东京02 | 高速四网推荐
+      - 🇯🇵日本东京01 | 高速四网推荐
+      - 🇭🇰香港│2.5x│免费│高速 01
+      - 🇫🇷法国马赛 | 高速专线-hy2
+      - 🇫🇷法国 | 0.1倍
+      - 🇪🇸西班牙 | 高速专线-hy2
+      - 🇩🇪德国│0.5x│免费│高速 01
+      - 🇩🇪德国│0.5x│免费│高速 01_1
+      - 🇩🇪德国 | 高速专线
+      - 🇧🇷巴西 | 高速专线-hy2
+      - 台湾_12
+      - 台湾_13
+      - 台湾_14
+      - 台湾_15
+      - 台湾_16
+      - US
+      - 台湾_17
+      - 俄罗斯_13
+      - 希腊_2
+      - 台湾_18
+      - 俄罗斯_14
+      - 美国_42
+      - 俄罗斯_15
+      - 美国_43
+      - 美国_44
+      - 美国_45
+      - 美国_46
+      - 俄罗斯_16
+      - 美国_47
+      - 美国_48
+      - 美国_49
+      - 台湾_19
+      - 香港_8
+      - 美国_50
+      - 台湾_20
+      - 台湾_21
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/providers/LocalAreaNetwork.list
+    interval: 86400
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./rules/providers/BanAD.list
+    interval: 86400
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/providers/BanProgramAD.list
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./rules/providers/GoogleCN.list
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/providers/SteamCN.list
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./rules/providers/Telegram.list
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./rules/providers/ProxyMedia.list
+    interval: 86400
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./rules/providers/ProxyLite.list
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./rules/providers/ChinaDomain.list
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./rules/providers/ChinaCompanyIp.list
+    interval: 86400
+
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🛑 全球拦截
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Telegram,🚀 节点选择
+  - RULE-SET,ProxyMedia,🚀 节点选择
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
