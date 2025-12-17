@@ -1,0 +1,2299 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+ipv6: false
+log-level: info
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+
+
+proxies:
+  - type: vmess
+    name: speedtest054
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vmess
+    name: speedtest055
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: trojan.burgerip.co.uk
+  - type: vmess
+    name: 🇩🇪 speedtest056
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+  - type: vmess
+    name: speedtest057
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: trojan.burgerip.co.uk
+  - type: vmess
+    name: 英国 speedtest058
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vmess
+    name: GB_96c99_0003
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+  - type: vmess
+    name: speedtest021
+    server: v30.hdacd.com
+    port: 30830
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: v30.hdacd.com
+  - type: vmess
+    name: 美国
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 2001:bc8:32d7:302::10
+  - type: vmess
+    name: 美国_1
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 2001:bc8:32d7:302::10
+  - type: vmess
+    name: 美国_2
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: hk.nbee.pp.ua
+  - type: vmess
+    name: 美国_3
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 82.198.246.97
+  - type: vmess
+    name: 美国_4
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+  - type: vmess
+    name: 美国_5
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: t.me%252Fripaojiedian
+  - type: vmess
+    name: 美国_6
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: cdnfire.xiaomispeed.com
+  - type: vmess
+    name: 美国_7
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 美国_8
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: joss.gpj1.web.id
+  - type: vmess
+    name: 美国_9
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: joss.gpj4.web.id
+  - type: vmess
+    name: 美国_10
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.alibaba.com
+  - type: vmess
+    name: 美国_11
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: trojan.burgerip.co.uk
+  - type: vmess
+    name: 美国_12
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 82.198.246.97
+  - type: vmess
+    name: 美国_13
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 2001:bc8:32d7:302::10
+  - type: vmess
+    name: 美国_14
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: t.me%2Fripaojiedian
+  - type: vmess
+    name: 美国_15
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: n1744454498.lie5d.cyou
+  - type: vmess
+    name: 美国_16
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 2001:bc8:32d7:302::10
+  - type: vmess
+    name: 美国_17
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: img14.360buyimg.com
+  - type: vmess
+    name: 美国_18
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: bbbbbbbbb.222769.xyz
+  - type: vmess
+    name: 美国_19
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: www.bing.com
+  - type: vmess
+    name: 美国_20
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: broadcastlv.chat.bilibili.com
+  - type: vmess
+    name: 美国_21
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: tianjiu.pages.dev
+  - type: vmess
+    name: 美国_22
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: trojan.burgerip.co.uk
+  - type: vmess
+    name: 美国_23
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: imafake.locker
+  - type: vmess
+    name: 美国_24
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: bbbbbbbbb.222769.xyz
+  - type: vmess
+    name: 美国_25
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: AZERB.NET
+  - type: vmess
+    name: 美国_26
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: 2001:bc8:32d7:302::10
+  - type: vmess
+    name: 法国
+    server: m.cnmjin.net
+    port: 16645
+    uuid: dc875b7c-c954-40e0-9007-73a4422e25c8
+    alterId: 0
+    network: ws
+    cipher: auto
+    servername: 53bcf48886181e0dd5bd8dea7ab9d4a2.mobgslb.tbcache.com
+    ws-opts:
+      path: /
+      headers:
+        Host: 53bcf48886181e0dd5bd8dea7ab9d4a2.mobgslb.tbcache.com
+  - type: vmess
+    name: 印度 🇮🇳
+    server: 103.97.203.220
+    port: 550
+    uuid: 9e0e83ca-0fbc-44b1-8024-0eb8f9414156
+    alterId: 0
+    network: tcp
+    cipher: auto
+    servername: t.me/v2Line
+  - type: ss
+    name: SS-78
+    server: 138.124.67.26
+    port: 25572
+    cipher: chacha20-ietf-poly1305
+    password: nqcIfYHlpMn3jzqkNDjKaG
+  - type: ss
+    name: 中国
+    server: 223.95.183.131
+    port: 39398
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中国_1
+    server: 223.95.183.131
+    port: 45295
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中国_2
+    server: 223.95.183.131
+    port: 25819
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國
+    server: 223.95.183.131
+    port: 25819
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_1
+    server: 223.95.183.131
+    port: 28217
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_2
+    server: 223.95.183.131
+    port: 47116
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 荷蘭
+    server: 194.59.183.134
+    port: 46114
+    cipher: chacha20-ietf-poly1305
+    password: lejSRyqa033OEPmEQsvRsl
+  - type: ss
+    name: 中国_3
+    server: 223.95.183.131
+    port: 47116
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_3
+    server: 223.95.183.131
+    port: 39398
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 美國
+    server: 138.124.67.26
+    port: 25572
+    cipher: chacha20-ietf-poly1305
+    password: nqcIfYHlpMn3jzqkNDjKaG
+  - type: ss
+    name: 荷蘭_1
+    server: 95.111.222.113
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa
+  - type: ss
+    name: 中國_4
+    server: 223.95.183.131
+    port: 45295
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中国_4
+    server: 223.95.183.131
+    port: 45295
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_5
+    server: 223.95.183.131
+    port: 45295
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_6
+    server: 223.95.183.131
+    port: 39398
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 新加坡
+    server: 223.95.183.131
+    port: 25819
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 新加坡_1
+    server: 223.95.183.131
+    port: 45295
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中国_5
+    server: 223.95.183.131
+    port: 39398
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 新加坡_2
+    server: 223.95.183.131
+    port: 39398
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_7
+    server: 223.95.183.131
+    port: 47116
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 新加坡_3
+    server: 223.95.183.131
+    port: 47116
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 中國_8
+    server: 223.95.183.131
+    port: 25819
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 荷蘭_2
+    server: 194.59.183.134
+    port: 46114
+    cipher: chacha20-ietf-poly1305
+    password: lejSRyqa033OEPmEQsvRsl
+  - type: ss
+    name: 中国_6
+    server: 223.95.183.131
+    port: 25819
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: ss
+    name: 美國_1
+    server: 138.124.67.26
+    port: 25572
+    cipher: chacha20-ietf-poly1305
+    password: nqcIfYHlpMn3jzqkNDjKaG
+  - type: ss
+    name: 法国_1
+    server: 138.124.67.26
+    port: 25572
+    cipher: chacha20-ietf-poly1305
+    password: nqcIfYHlpMn3jzqkNDjKaG
+  - type: ss
+    name: 中國_9
+    server: 223.95.183.131
+    port: 28217
+    cipher: aes-128-gcm
+    password: b637f2e47b7827b308ebf399008075d2
+  - type: vless
+    name: VLESS-73 | free-nodes
+    server: 185.136.132.171
+    port: 24170
+    uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
+    network: tcp
+    servername: speedtest.net
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
+      short-id: 2fb2106a629b
+      spider-x: /
+    client-fingerprint: chrome
+  - type: vless
+    name: FR VLESS-02 | free-nodes
+    server: fra.germany-14.com
+    port: 2087
+    uuid: 2b7ff221-0ea2-4474-ab4e-686e6a11dc65
+    network: tcp
+    servername: tgju.org
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: p8D0V1jYr98lK4kU8FlBYfQ1kMO6zgIx5qI_p5dr_Bc
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: firefox
+  - type: vless
+    name: VLESS-127 | free-nodes
+    server: 167.17.70.16
+    port: 8443
+    uuid: 55975415-43c0-461c-8752-d5b8013364e3
+    network: tcp
+    servername: www.microsoft.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 8W9r2aXGhKNtvPxnL6EiPpQuSm9OJT17x2xyxwxIo30
+      short-id: 84f70f1177981563
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: VLESS-36 | free-nodes
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    network: tcp
+    servername: i2pd.website
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: VLESS-35 | free-nodes
+    server: zahedan.dns-dynamic.net
+    port: 46063
+    uuid: b1840f07-6100-4871-97df-0e37b9649867
+    network: grpc
+    servername: zahedan.dns-dynamic.net
+    tls: true
+    encryption: none
+    client-fingerprint: firefox
+    alpn:
+      - h2
+      - http/1.1
+  - type: vless
+    name: VLESS-10 | free-nodes
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    network: tcp
+    servername: i2pd.website
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: NN_96c99_0014
+    server: yk.bunnywaffle.org
+    port: 20331
+    uuid: 2ab7786d-a7cf-432c-8d09-2422315bdd35
+    network: tcp
+    servername: tesla.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: 4AuA5S-ik84HPG2pAQQ4pPF5zNYVSKw6isoueaaJCBU
+      short-id: fe
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇨🇳 台湾 | TWN 4
+    server: hinet.gzcloud.shop
+    port: 1314
+    uuid: 425ec5e6-1f85-4c74-b842-29cb6fd877b4
+    network: tcp
+    servername: buylite.music.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+      short-id: 4b070735
+    client-fingerprint: edge
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 🇺🇸_US_美国
+    server: notability.com
+    port: 2053
+    uuid: 69413f01-c5ae-edb7-66e7-0a9e11caf2c9
+    network: ws
+    servername: ss.saaas.de5.net
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /proxyip=sjc.o00o.ooo
+      headers:
+        Host: ss.saaas.de5.net
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇵🇱_PL_波兰
+    server: 185.136.132.171
+    port: 24170
+    uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
+    network: tcp
+    servername: speedtest.net
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
+      short-id: 2fb2106a629b
+      spider-x: /
+    client-fingerprint: chrome
+  - type: vless
+    name: 🇸🇦_SA_沙特阿拉伯
+    server: us01-vlr01-gmn03.vpnvezdehod.net
+    port: 443
+    uuid: 2ca07504-c06a-41a4-b26b-99807a7d24cf
+    network: tcp
+    servername: hls-svod.itunes.apple.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 48720c
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 美国_27
+    server: 89.116.193.40
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    network: tcp
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+  - type: vless
+    name: 俄罗斯
+    server: 94.131.100.173
+    port: 443
+    uuid: 0a0d846f-8f54-4db4-940b-b373b1b02e4c
+    network: ws
+    servername: www.vk.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /coxzfsws
+      headers:
+        Host: 639010645287857140.accord-lmnxa.info
+  - type: vless
+    name: 荷兰
+    server: 185.136.132.171
+    port: 24170
+    uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
+    network: tcp
+    servername: speedtest.net
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
+      short-id: 2fb2106a629b
+  - type: vless
+    name: 荷兰_1
+    server: 185.136.132.171
+    port: 24170
+    uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
+    network: tcp
+    servername: speedtest.net
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
+      short-id: 2fb2106a629b
+    client-fingerprint: chrome
+  - type: vless
+    name: 俄罗斯_1
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: 6a830bcd-6104-472e-b174-d66eb463acf7
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: d3b13f31
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_2
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: c8685922-46f6-4cce-a64d-269aa22bdc84
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 以色列
+    server: 185.136.132.171
+    port: 24170
+    uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
+    network: tcp
+    servername: speedtest.net
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
+      short-id: 2fb2106a629b
+    client-fingerprint: chrome
+  - type: vless
+    name: 俄罗斯_3
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: e3ce253c-896c-416f-9a4a-33b1cb771e02
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_4
+    server: 62.60.148.21
+    port: 443
+    uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
+    network: tcp
+    servername: st.ozone.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho
+      short-id: ee6f3e8f44b1f0b6
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_5
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fba162df-6a82-4d57-b956-3a862944f50e
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_6
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fa9a90cf-f639-4719-9db7-1aba06690552
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_7
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fba162df-6a82-4d57-b956-3a862944f50e
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_8
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fa9a90cf-f639-4719-9db7-1aba06690552
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_9
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: b9c0d277-5dbe-41fa-a19d-5314f23ad22a
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 美国_28
+    server: 143.244.197.90
+    port: 40187
+    uuid: f22d79bb-4eaf-45ee-b406-81ad3745dff1
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 美国_29
+    server: 89.116.193.40
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    network: tcp
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    client-fingerprint: chrome
+  - type: vless
+    name: 美国_30
+    server: 209.38.168.122
+    port: 21250
+    uuid: 69239696-f17e-4eb2-a337-7ce07d65d23d
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 俄罗斯_10
+    server: 89.169.177.222
+    port: 8443
+    uuid: 3a066455-22e9-45e7-804e-f1aaaa280e02
+    network: tcp
+    servername: api-maps.yandex.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: CDE57QnfR1CIzHYt5yO2kKrRiBUv4XsvroUQZveU_mE
+      short-id: 5540e44a53c3d01c
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 伊朗
+    server: zahedan.dns-dynamic.net
+    port: 46063
+    uuid: b1840f07-6100-4871-97df-0e37b9649867
+    network: grpc
+    servername: zahedan.dns-dynamic.net
+    tls: true
+    encryption: none
+  - type: vless
+    name: 伊朗_1
+    server: zahedan.dns-dynamic.net
+    port: 46063
+    uuid: b1840f07-6100-4871-97df-0e37b9649867
+    network: grpc
+    servername: zahedan.dns-dynamic.net
+    tls: true
+    encryption: none
+    client-fingerprint: firefox
+  - type: vless
+    name: 俄羅斯
+    server: 51.250.10.228
+    port: 443
+    uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+    network: tcp
+    servername: sun6-21.userapi.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+      short-id: 65c7748be8
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 德國
+    server: 134.122.94.36
+    port: 53479
+    uuid: 0ae40bf3-d28b-4d2e-a01a-f1a01cabcb96
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 伊朗_2
+    server: 94.182.137.12
+    port: 20532
+    uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+    network: tcp
+    servername: Telewebion.com
+    encryption: none
+  - type: vless
+    name: 美国_31
+    server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+    port: 443
+    uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+    network: tcp
+    servername: i2pd.website
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+      short-id: 55e6af1a35e64a98
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 美国_32
+    server: 89.116.193.40
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    network: tcp
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+  - type: vless
+    name: 美国_33
+    server: 89.116.193.40
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    network: tcp
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    client-fingerprint: chrome
+  - type: vless
+    name: 美国_34
+    server: 89.116.193.40
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    network: tcp
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+    client-fingerprint: chrome
+  - type: vless
+    name: 美国_35
+    server: 89.116.193.40
+    port: 34045
+    uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+    network: tcp
+    servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+      short-id: e8ab71d0
+  - type: vless
+    name: 波兰
+    server: 185.136.132.171
+    port: 24170
+    uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
+    network: tcp
+    servername: speedtest.net
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
+      short-id: 2fb2106a629b
+      spider-x: /
+    client-fingerprint: chrome
+  - type: vless
+    name: 俄罗斯_11
+    server: 94.131.100.173
+    port: 443
+    uuid: 0a0d846f-8f54-4db4-940b-b373b1b02e4c
+    network: ws
+    servername: www.vk.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /coxzfsws
+      headers:
+        Host: 639010645287857140.accord-lmnxa.info
+  - type: vless
+    name: 俄罗斯_12
+    server: 94.131.100.173
+    port: 443
+    uuid: 0a0d846f-8f54-4db4-940b-b373b1b02e4c
+    network: ws
+    servername: www.vk.com
+    tls: true
+    encryption: none
+    ws-opts:
+      path: /coxzfsws
+      headers:
+        Host: 639010645287857140.accord-lmnxa.info
+  - type: vless
+    name: 俄罗斯_13
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fa9a90cf-f639-4719-9db7-1aba06690552
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_14
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fba162df-6a82-4d57-b956-3a862944f50e
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_15
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fba162df-6a82-4d57-b956-3a862944f50e
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_16
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fba162df-6a82-4d57-b956-3a862944f50e
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_17
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: c8685922-46f6-4cce-a64d-269aa22bdc84
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_18
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fba162df-6a82-4d57-b956-3a862944f50e
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_19
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fa9a90cf-f639-4719-9db7-1aba06690552
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_20
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: e3ce253c-896c-416f-9a4a-33b1cb771e02
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_21
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: e3ce253c-896c-416f-9a4a-33b1cb771e02
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_22
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: b9c0d277-5dbe-41fa-a19d-5314f23ad22a
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_23
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: b9c0d277-5dbe-41fa-a19d-5314f23ad22a
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_24
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: 6a830bcd-6104-472e-b174-d66eb463acf7
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: d3b13f31
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_25
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fa9a90cf-f639-4719-9db7-1aba06690552
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_26
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: c8685922-46f6-4cce-a64d-269aa22bdc84
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_27
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: fa9a90cf-f639-4719-9db7-1aba06690552
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_28
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: 6a830bcd-6104-472e-b174-d66eb463acf7
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: d3b13f31
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_29
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: b9c0d277-5dbe-41fa-a19d-5314f23ad22a
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: e499f276e7bd6420
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_30
+    server: ru01-blh02.tcp-reset-club.net
+    port: 443
+    uuid: c8685922-46f6-4cce-a64d-269aa22bdc84
+    network: tcp
+    servername: www.kinopoisk.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: vless
+    name: " 荷兰"
+    server: 143.244.197.90
+    port: 40187
+    uuid: f22d79bb-4eaf-45ee-b406-81ad3745dff1
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 英国
+    server: 209.38.168.122
+    port: 21250
+    uuid: 69239696-f17e-4eb2-a337-7ce07d65d23d
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 美國_2
+    server: 3.143.235.221
+    port: 32252
+    uuid: f0a44f8f-c01f-490c-a6eb-29106a2509a4
+    network: grpc
+    servername: 3.143.235.221
+    tls: true
+    encryption: none
+    grpc-opts:
+      grpc-service-name: www.bing.com
+  - type: vless
+    name: 德國_1
+    server: 134.122.94.36
+    port: 53479
+    uuid: 0ae40bf3-d28b-4d2e-a01a-f1a01cabcb96
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 美国_36
+    server: 3.143.235.221
+    port: 32252
+    uuid: f0a44f8f-c01f-490c-a6eb-29106a2509a4
+    network: grpc
+    servername: 3.143.235.221
+    tls: true
+    encryption: none
+    grpc-opts:
+      grpc-service-name: www.bing.com
+    alpn:
+      - h2
+      - http/1.1
+  - type: vless
+    name: 美国_37
+    server: 209.38.168.122
+    port: 21250
+    uuid: 69239696-f17e-4eb2-a337-7ce07d65d23d
+    network: grpc
+    encryption: none
+    grpc-opts:
+      grpc-service-name: ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  - type: vless
+    name: 俄羅斯_1
+    server: 51.250.10.228
+    port: 443
+    uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+    network: tcp
+    servername: sun6-21.userapi.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+      short-id: 65c7748be8
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 伊朗_3
+    server: zahedan.dns-dynamic.net
+    port: 46063
+    uuid: b1840f07-6100-4871-97df-0e37b9649867
+    network: grpc
+    servername: zahedan.dns-dynamic.net
+    tls: true
+    encryption: none
+    client-fingerprint: firefox
+  - type: vless
+    name: 伊朗_4
+    server: zahedan.dns-dynamic.net
+    port: 46063
+    uuid: b1840f07-6100-4871-97df-0e37b9649867
+    network: grpc
+    servername: zahedan.dns-dynamic.net
+    tls: true
+    encryption: none
+  - type: vless
+    name: 俄罗斯_31
+    server: 51.250.10.228
+    port: 443
+    uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+    network: tcp
+    servername: sun6-21.userapi.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+      short-id: 65c7748be8
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_32
+    server: 51.250.10.228
+    port: 443
+    uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
+    network: tcp
+    servername: sun6-21.userapi.com
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+      short-id: 65c7748be8
+    client-fingerprint: qq
+    flow: xtls-rprx-vision
+  - type: vless
+    name: 俄罗斯_33
+    server: 51.250.43.141
+    port: 8443
+    uuid: c69ccf0c-02e4-4325-8687-3a622a9f9fcf
+    network: tcp
+    servername: ads.x5.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: e2X3eYakAbU2NCCldc2uRMJG00SBKv9Nzp8AcCRlMik
+      short-id: c950
+    client-fingerprint: chrome
+  - type: vless
+    name: 伊朗_5
+    server: 94.182.137.12
+    port: 20532
+    uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+    network: tcp
+    servername: Telewebion.com
+    encryption: none
+  - type: vless
+    name: 俄罗斯_34
+    server: 62.60.148.21
+    port: 443
+    uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
+    network: tcp
+    servername: st.ozone.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho
+      short-id: ee6f3e8f44b1f0b6
+    client-fingerprint: chrome
+    flow: xtls-rprx-vision
+  - type: trojan
+    name: HK TROJAN-16 | free-nodes
+    server: 58.152.30.31
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: TROJAN-532 | free-nodes
+    server: 58.152.30.31
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港+电讯盈科有限公司
+    server: 58.152.30.31
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港
+    server: 219.79.214.159
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_1
+    server: 219.79.214.159
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_2
+    server: 219.79.214.159
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_3
+    server: 219.79.214.159
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_4
+    server: 219.79.214.159
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_5
+    server: 58.152.30.31
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 美國_3
+    server: 104.11.86.252
+    port: 443
+    password: hSA6YXe15O
+    network: tcp
+    sni: Telegram������������ @WangCai2
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_6
+    server: 219.79.214.159
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 美國_4
+    server: 104.11.86.252
+    port: 443
+    password: hSA6YXe15O
+    network: tcp
+    sni: Telegram������������ @WangCai2
+    skip-cert-verify: true
+    tls: true
+  - type: trojan
+    name: 香港_7
+    server: 58.152.30.31
+    port: 443
+    password: BxceQaOe
+    network: tcp
+    sni: t.me/ripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - type: hysteria2
+    name: 德国
+    server: 85.209.53.170
+    port: 443
+    password: dc318e56-ee8f-41c6-b735-27358db2c36e
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德國_2
+    server: 85.209.53.170
+    port: 443
+    password: 7d60ad5c-17ff-4d7c-ad94-bfadcd5dfcc4
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德國_3
+    server: 85.209.53.170
+    port: 443
+    password: 24c9c801-8d30-4c46-88b6-254fc6bc0cf9
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_1
+    server: 85.209.53.170
+    port: 443
+    password: 60b93c5f-7ada-4482-94c3-f7705f7dd84a
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 英國
+    server: yg.kaixincloud.top
+    port: 25200
+    ports: 25200-26200
+    password: 5ed18136-2f0d-4482-a04a-57abe0d2d1cd
+    sni: yg.kaixincloud.top
+  - type: hysteria2
+    name: 德國_4
+    server: 85.209.53.170
+    port: 80
+    password: 08437c04-297c-4069-82b9-ab4ddc611b58
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_2
+    server: 85.209.53.170
+    port: 80
+    password: d27f6f1b-0c91-4420-a543-16fa73ef1e8a
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_3
+    server: 85.209.53.170
+    port: 80
+    password: 08437c04-297c-4069-82b9-ab4ddc611b58
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_4
+    server: 85.209.53.170
+    port: 443
+    password: dc318e56-ee8f-41c6-b735-27358db2c36e
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_5
+    server: 85.209.53.170
+    port: 80
+    password: d27f6f1b-0c91-4420-a543-16fa73ef1e8a
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德國_5
+    server: 85.209.53.170
+    port: 443
+    password: 7d60ad5c-17ff-4d7c-ad94-bfadcd5dfcc4
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_6
+    server: 85.209.53.170
+    port: 443
+    password: dc318e56-ee8f-41c6-b735-27358db2c36e
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+  - type: hysteria2
+    name: 德国_7
+    server: 85.209.53.170
+    port: 443
+    password: 7d60ad5c-17ff-4d7c-ad94-bfadcd5dfcc4
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - speedtest054
+      - speedtest055
+      - 🇩🇪 speedtest056
+      - speedtest057
+      - 英国 speedtest058
+      - GB_96c99_0003
+      - speedtest021
+      - 美国
+      - 美国_1
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 美国_8
+      - 美国_9
+      - 美国_10
+      - 美国_11
+      - 美国_12
+      - 美国_13
+      - 美国_14
+      - 美国_15
+      - 美国_16
+      - 美国_17
+      - 美国_18
+      - 美国_19
+      - 美国_20
+      - 美国_21
+      - 美国_22
+      - 美国_23
+      - 美国_24
+      - 美国_25
+      - 美国_26
+      - 法国
+      - 印度 🇮🇳
+      - SS-78
+      - 中国
+      - 中国_1
+      - 中国_2
+      - 中國
+      - 中國_1
+      - 中國_2
+      - 荷蘭
+      - 中国_3
+      - 中國_3
+      - 美國
+      - 荷蘭_1
+      - 中國_4
+      - 中国_4
+      - 中國_5
+      - 中國_6
+      - 新加坡
+      - 新加坡_1
+      - 中国_5
+      - 新加坡_2
+      - 中國_7
+      - 新加坡_3
+      - 中國_8
+      - 荷蘭_2
+      - 中国_6
+      - 美國_1
+      - 法国_1
+      - 中國_9
+      - VLESS-73 | free-nodes
+      - FR VLESS-02 | free-nodes
+      - VLESS-127 | free-nodes
+      - VLESS-36 | free-nodes
+      - VLESS-35 | free-nodes
+      - VLESS-10 | free-nodes
+      - NN_96c99_0014
+      - 🇨🇳 台湾 | TWN 4
+      - 🇺🇸_US_美国
+      - 🇵🇱_PL_波兰
+      - 🇸🇦_SA_沙特阿拉伯
+      - 美国_27
+      - 俄罗斯
+      - 荷兰
+      - 荷兰_1
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 以色列
+      - 俄罗斯_3
+      - 俄罗斯_4
+      - 俄罗斯_5
+      - 俄罗斯_6
+      - 俄罗斯_7
+      - 俄罗斯_8
+      - 俄罗斯_9
+      - 美国_28
+      - 美国_29
+      - 美国_30
+      - 俄罗斯_10
+      - 伊朗
+      - 伊朗_1
+      - 俄羅斯
+      - 德國
+      - 伊朗_2
+      - 美国_31
+      - 美国_32
+      - 美国_33
+      - 美国_34
+      - 美国_35
+      - 波兰
+      - 俄罗斯_11
+      - 俄罗斯_12
+      - 俄罗斯_13
+      - 俄罗斯_14
+      - 俄罗斯_15
+      - 俄罗斯_16
+      - 俄罗斯_17
+      - 俄罗斯_18
+      - 俄罗斯_19
+      - 俄罗斯_20
+      - 俄罗斯_21
+      - 俄罗斯_22
+      - 俄罗斯_23
+      - 俄罗斯_24
+      - 俄罗斯_25
+      - 俄罗斯_26
+      - 俄罗斯_27
+      - 俄罗斯_28
+      - 俄罗斯_29
+      - 俄罗斯_30
+      - " 荷兰"
+      - 英国
+      - 美國_2
+      - 德國_1
+      - 美国_36
+      - 美国_37
+      - 俄羅斯_1
+      - 伊朗_3
+      - 伊朗_4
+      - 俄罗斯_31
+      - 俄罗斯_32
+      - 俄罗斯_33
+      - 伊朗_5
+      - 俄罗斯_34
+      - HK TROJAN-16 | free-nodes
+      - TROJAN-532 | free-nodes
+      - 香港+电讯盈科有限公司
+      - 香港
+      - 香港_1
+      - 香港_2
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - 美國_3
+      - 香港_6
+      - 美國_4
+      - 香港_7
+      - 德国
+      - 德國_2
+      - 德國_3
+      - 德国_1
+      - 英國
+      - 德國_4
+      - 德国_2
+      - 德国_3
+      - 德国_4
+      - 德国_5
+      - 德國_5
+      - 德国_6
+      - 德国_7
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - speedtest054
+      - speedtest055
+      - 🇩🇪 speedtest056
+      - speedtest057
+      - 英国 speedtest058
+      - GB_96c99_0003
+      - speedtest021
+      - 美国
+      - 美国_1
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 美国_8
+      - 美国_9
+      - 美国_10
+      - 美国_11
+      - 美国_12
+      - 美国_13
+      - 美国_14
+      - 美国_15
+      - 美国_16
+      - 美国_17
+      - 美国_18
+      - 美国_19
+      - 美国_20
+      - 美国_21
+      - 美国_22
+      - 美国_23
+      - 美国_24
+      - 美国_25
+      - 美国_26
+      - 法国
+      - 印度 🇮🇳
+      - SS-78
+      - 中国
+      - 中国_1
+      - 中国_2
+      - 中國
+      - 中國_1
+      - 中國_2
+      - 荷蘭
+      - 中国_3
+      - 中國_3
+      - 美國
+      - 荷蘭_1
+      - 中國_4
+      - 中国_4
+      - 中國_5
+      - 中國_6
+      - 新加坡
+      - 新加坡_1
+      - 中国_5
+      - 新加坡_2
+      - 中國_7
+      - 新加坡_3
+      - 中國_8
+      - 荷蘭_2
+      - 中国_6
+      - 美國_1
+      - 法国_1
+      - 中國_9
+      - VLESS-73 | free-nodes
+      - FR VLESS-02 | free-nodes
+      - VLESS-127 | free-nodes
+      - VLESS-36 | free-nodes
+      - VLESS-35 | free-nodes
+      - VLESS-10 | free-nodes
+      - NN_96c99_0014
+      - 🇨🇳 台湾 | TWN 4
+      - 🇺🇸_US_美国
+      - 🇵🇱_PL_波兰
+      - 🇸🇦_SA_沙特阿拉伯
+      - 美国_27
+      - 俄罗斯
+      - 荷兰
+      - 荷兰_1
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 以色列
+      - 俄罗斯_3
+      - 俄罗斯_4
+      - 俄罗斯_5
+      - 俄罗斯_6
+      - 俄罗斯_7
+      - 俄罗斯_8
+      - 俄罗斯_9
+      - 美国_28
+      - 美国_29
+      - 美国_30
+      - 俄罗斯_10
+      - 伊朗
+      - 伊朗_1
+      - 俄羅斯
+      - 德國
+      - 伊朗_2
+      - 美国_31
+      - 美国_32
+      - 美国_33
+      - 美国_34
+      - 美国_35
+      - 波兰
+      - 俄罗斯_11
+      - 俄罗斯_12
+      - 俄罗斯_13
+      - 俄罗斯_14
+      - 俄罗斯_15
+      - 俄罗斯_16
+      - 俄罗斯_17
+      - 俄罗斯_18
+      - 俄罗斯_19
+      - 俄罗斯_20
+      - 俄罗斯_21
+      - 俄罗斯_22
+      - 俄罗斯_23
+      - 俄罗斯_24
+      - 俄罗斯_25
+      - 俄罗斯_26
+      - 俄罗斯_27
+      - 俄罗斯_28
+      - 俄罗斯_29
+      - 俄罗斯_30
+      - " 荷兰"
+      - 英国
+      - 美國_2
+      - 德國_1
+      - 美国_36
+      - 美国_37
+      - 俄羅斯_1
+      - 伊朗_3
+      - 伊朗_4
+      - 俄罗斯_31
+      - 俄罗斯_32
+      - 俄罗斯_33
+      - 伊朗_5
+      - 俄罗斯_34
+      - HK TROJAN-16 | free-nodes
+      - TROJAN-532 | free-nodes
+      - 香港+电讯盈科有限公司
+      - 香港
+      - 香港_1
+      - 香港_2
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - 美國_3
+      - 香港_6
+      - 美國_4
+      - 香港_7
+      - 德国
+      - 德國_2
+      - 德國_3
+      - 德国_1
+      - 英國
+      - 德國_4
+      - 德国_2
+      - 德国_3
+      - 德国_4
+      - 德国_5
+      - 德國_5
+      - 德国_6
+      - 德国_7
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - speedtest054
+      - speedtest055
+      - 🇩🇪 speedtest056
+      - speedtest057
+      - 英国 speedtest058
+      - GB_96c99_0003
+      - speedtest021
+      - 美国
+      - 美国_1
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 美国_8
+      - 美国_9
+      - 美国_10
+      - 美国_11
+      - 美国_12
+      - 美国_13
+      - 美国_14
+      - 美国_15
+      - 美国_16
+      - 美国_17
+      - 美国_18
+      - 美国_19
+      - 美国_20
+      - 美国_21
+      - 美国_22
+      - 美国_23
+      - 美国_24
+      - 美国_25
+      - 美国_26
+      - 法国
+      - 印度 🇮🇳
+      - SS-78
+      - 中国
+      - 中国_1
+      - 中国_2
+      - 中國
+      - 中國_1
+      - 中國_2
+      - 荷蘭
+      - 中国_3
+      - 中國_3
+      - 美國
+      - 荷蘭_1
+      - 中國_4
+      - 中国_4
+      - 中國_5
+      - 中國_6
+      - 新加坡
+      - 新加坡_1
+      - 中国_5
+      - 新加坡_2
+      - 中國_7
+      - 新加坡_3
+      - 中國_8
+      - 荷蘭_2
+      - 中国_6
+      - 美國_1
+      - 法国_1
+      - 中國_9
+      - VLESS-73 | free-nodes
+      - FR VLESS-02 | free-nodes
+      - VLESS-127 | free-nodes
+      - VLESS-36 | free-nodes
+      - VLESS-35 | free-nodes
+      - VLESS-10 | free-nodes
+      - NN_96c99_0014
+      - 🇨🇳 台湾 | TWN 4
+      - 🇺🇸_US_美国
+      - 🇵🇱_PL_波兰
+      - 🇸🇦_SA_沙特阿拉伯
+      - 美国_27
+      - 俄罗斯
+      - 荷兰
+      - 荷兰_1
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 以色列
+      - 俄罗斯_3
+      - 俄罗斯_4
+      - 俄罗斯_5
+      - 俄罗斯_6
+      - 俄罗斯_7
+      - 俄罗斯_8
+      - 俄罗斯_9
+      - 美国_28
+      - 美国_29
+      - 美国_30
+      - 俄罗斯_10
+      - 伊朗
+      - 伊朗_1
+      - 俄羅斯
+      - 德國
+      - 伊朗_2
+      - 美国_31
+      - 美国_32
+      - 美国_33
+      - 美国_34
+      - 美国_35
+      - 波兰
+      - 俄罗斯_11
+      - 俄罗斯_12
+      - 俄罗斯_13
+      - 俄罗斯_14
+      - 俄罗斯_15
+      - 俄罗斯_16
+      - 俄罗斯_17
+      - 俄罗斯_18
+      - 俄罗斯_19
+      - 俄罗斯_20
+      - 俄罗斯_21
+      - 俄罗斯_22
+      - 俄罗斯_23
+      - 俄罗斯_24
+      - 俄罗斯_25
+      - 俄罗斯_26
+      - 俄罗斯_27
+      - 俄罗斯_28
+      - 俄罗斯_29
+      - 俄罗斯_30
+      - " 荷兰"
+      - 英国
+      - 美國_2
+      - 德國_1
+      - 美国_36
+      - 美国_37
+      - 俄羅斯_1
+      - 伊朗_3
+      - 伊朗_4
+      - 俄罗斯_31
+      - 俄罗斯_32
+      - 俄罗斯_33
+      - 伊朗_5
+      - 俄罗斯_34
+      - HK TROJAN-16 | free-nodes
+      - TROJAN-532 | free-nodes
+      - 香港+电讯盈科有限公司
+      - 香港
+      - 香港_1
+      - 香港_2
+      - 香港_3
+      - 香港_4
+      - 香港_5
+      - 美國_3
+      - 香港_6
+      - 美國_4
+      - 香港_7
+      - 德国
+      - 德國_2
+      - 德國_3
+      - 德国_1
+      - 英國
+      - 德國_4
+      - 德国_2
+      - 德国_3
+      - 德国_4
+      - 德国_5
+      - 德國_5
+      - 德国_6
+      - 德国_7
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/providers/LocalAreaNetwork.list
+    interval: 86400
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./rules/providers/BanAD.list
+    interval: 86400
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/providers/BanProgramAD.list
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./rules/providers/GoogleCN.list
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/providers/SteamCN.list
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./rules/providers/Telegram.list
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./rules/providers/ProxyMedia.list
+    interval: 86400
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./rules/providers/ProxyLite.list
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./rules/providers/ChinaDomain.list
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./rules/providers/ChinaCompanyIp.list
+    interval: 86400
+
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🛑 全球拦截
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Telegram,🚀 节点选择
+  - RULE-SET,ProxyMedia,🚀 节点选择
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
