@@ -1,0 +1,4102 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
+proxies:
+  - name: KR-ss
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: " HK-ss"
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: " HK-ss_1"
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: " JP-ss"
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG-ss_1
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_2
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_3
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 美国021
+    type: vless
+    server: 68.64.179.96
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_1
+    type: vless
+    server: 211.48.77.114
+    port: 11265
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_2
+    type: vless
+    server: 83.229.121.78
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_3
+    type: vless
+    server: 121.139.183.69
+    port: 30020
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_4
+    type: vless
+    server: 68.64.179.250
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_5
+    type: vless
+    server: 211.48.77.114
+    port: 22410
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_6
+    type: vless
+    server: 211.238.83.146
+    port: 23792
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_7
+    type: vless
+    server: 175.212.45.195
+    port: 12053
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_8
+    type: vless
+    server: 118.42.204.220
+    port: 11176
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_9
+    type: vless
+    server: 210.105.224.42
+    port: 10840
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_10
+    type: vless
+    server: 118.42.204.220
+    port: 12735
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: " 美國"
+    type: trojan
+    server: 172.66.44.230
+    port: 8443
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1?ed=2560
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+  - name: 英国023
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国021_11
+    type: vless
+    server: 116.93.199.28
+    port: 21510
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 英国030
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国024
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+    client-fingerprint: chrome
+  - name: 美国025
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 波兰
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇺🇸US_335 | ⬇️ 1.8MB/s
+    type: hysteria2
+    server: 157.254.223.24
+    port: 30088
+    password: alvin9999.com
+    sni: apple.com
+    skip-cert-verify: true
+  - name: us 🇺🇸
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+  - name: 美国021_12
+    type: vless
+    server: 221.146.116.77
+    port: 15284
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_13
+    type: vless
+    server: 220.92.158.117
+    port: 15916
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+  - name: 🇬🇧GB_1|1.2MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: speedtest 201045
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇺🇸US_1 | ⬇️ 1.4MB/s
+    type: anytls
+    server: us1.anliangjifei.top
+    port: 12053
+    password: ae74dd32-c336-4be4-9c15-f6108292b3e5
+    sni: us1.anliangjifei.top
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇦🇲 亚美尼亚1
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 美国021_14
+    type: vless
+    server: 183.104.97.23
+    port: 30000
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国028
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国021_15
+    type: vless
+    server: 43.165.180.71
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国026
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国029
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇺🇸_US_美国
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: US
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇳🇱NL_2 | ⬇️ 3.6MB/s
+    type: vless
+    server: 104.18.32.47
+    port: 2052
+    uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  - name: 🇬🇧GB_1 | ⬇️ 2.5MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: speedtest 12
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇳🇱NL_7 | ⬇️ 8.3MB/s
+    type: vless
+    server: mx2.tehrantolidi.ir
+    port: 80
+    uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /site
+      headers:
+        Host: cdn123.global.ssl.fastly.net
+  - name: 美国021_16
+    type: vless
+    server: 83.229.123.173
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_17
+    type: vless
+    server: 112.167.47.83
+    port: 23297
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: VLESS-73 | free-nodes
+    type: vless
+    server: dns.dressforida.monster
+    port: 443
+    uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
+    servername: www.techradar.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: 174c6cf22e22
+  - name: 美国021_18
+    type: vless
+    server: 194.87.10.77
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国021_19
+    type: vless
+    server: 211.238.83.146
+    port: 32641
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 英国027
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇺🇸_US_美国_1
+    type: vless
+    server: 139.196.41.153
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /gs5=6666:6666@47.239.178.125:6666
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031
+    type: vless
+    server: 68.64.179.243
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_1
+    type: vless
+    server: 68.64.179.250
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_2
+    type: vless
+    server: 220.122.42.198
+    port: 19071
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.fgfw.indevs.in
+    tls: true
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.indevs.in
+  - name: 美国031_3
+    type: vless
+    server: 220.88.3.5
+    port: 12283
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_4
+    type: vless
+    server: 112.184.55.64
+    port: 32789
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_5
+    type: vless
+    server: 175.212.45.195
+    port: 12053
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_6
+    type: vless
+    server: 59.30.5.169
+    port: 30020
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 日本031
+    type: vless
+    server: 202.84.53.85
+    port: 30816
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_7
+    type: vless
+    server: 221.146.116.77
+    port: 15284
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_8
+    type: vless
+    server: 218.155.23.9
+    port: 12184
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_9
+    type: vless
+    server: 211.48.77.114
+    port: 11265
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_10
+    type: vless
+    server: 211.184.116.84
+    port: 50000
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_11
+    type: vless
+    server: 59.3.3.161
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_12
+    type: vless
+    server: 211.238.83.146
+    port: 23792
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_13
+    type: vless
+    server: 77.93.91.159
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_14
+    type: vless
+    server: 116.93.199.28
+    port: 12634
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_15
+    type: vless
+    server: 118.42.204.220
+    port: 12735
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_16
+    type: vless
+    server: 83.229.121.78
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_17
+    type: vless
+    server: 211.238.83.146
+    port: 32641
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_18
+    type: vless
+    server: 220.88.3.5
+    port: 11099
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_19
+    type: vless
+    server: 220.85.201.216
+    port: 10448
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_20
+    type: vless
+    server: 61.102.250.123
+    port: 15347
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_21
+    type: vless
+    server: 83.229.123.173
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_22
+    type: vless
+    server: 116.93.199.28
+    port: 21036
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国046
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国043
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 英国044
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 英国045
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国031_23
+    type: vless
+    server: 118.42.204.220
+    port: 12281
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国049
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 英国042
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 英国041
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国031_24
+    type: vless
+    server: 111.65.134.21
+    port: 36210
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_25
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 美国031_26
+    type: vless
+    server: 43.165.180.71
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_27
+    type: vless
+    server: 141.11.21.219
+    port: 17191
+    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
+    servername: a.sezar.top
+    tls: true
+  - name: 美国047
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国048
+    type: vmess
+    server: v12.hdacd.com
+    port: 30812
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 美国031_28
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 美国031_29
+    type: vless
+    server: 211.243.73.135
+    port: 30023
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 韩国031
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 美国031_30
+    type: vless
+    server: 68.64.179.96
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 香港031
+    type: vless
+    server: 104.18.32.47
+    port: 2052
+    uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  - name: 俄罗斯031
+    type: vless
+    server: 194.87.10.77
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 新加坡031
+    type: vless
+    server: 43.160.248.66
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_31
+    type: vless
+    server: 121.139.183.69
+    port: 30020
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 美国031_32
+    type: vless
+    server: 116.93.199.28
+    port: 20492
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: US VLESS-57 | free-nodes
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: VLESS-110 | free-nodes
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: DE VLESS-50 | free-nodes
+    type: vless
+    server: fin.rokvpn.ru
+    port: 8443
+    uuid: 43e322c8-e044-4625-a560-9bfec45e0eae
+    servername: yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+  - name: GB VLESS-56 | free-nodes
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 英国 12
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 亚太地区 13
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: US_ab359_0057
+    type: vless
+    server: 68.64.179.243
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_ab359_0046
+    type: vless
+    server: 220.78.129.86
+    port: 11937
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /TelegramU0001F1E8U0001F1F3@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_ab359_0039
+    type: vless
+    server: 118.42.204.220
+    port: 12281
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: US_ab359_0056
+    type: vless
+    server: 68.64.179.96
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_ab359_0024
+    type: vless
+    server: 211.48.77.114
+    port: 11265
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: KR_ab359_0037
+    type: vless
+    server: 121.166.253.13
+    port: 30038
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: HK_ab359_0015
+    type: trojan
+    server: 58.152.25.253
+    port: 443
+    password: BxceQaOe
+    sni: t.me%2Fripaojiedian
+    skip-cert-verify: true
+    tls: true
+  - name: US_ab359_0054
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: KR_ab359_0019
+    type: vless
+    server: 211.238.83.146
+    port: 32641
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA 10
+    type: vless
+    server: 68.64.179.243
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR 9
+    type: vless
+    server: 59.29.89.197
+    port: 20114
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR 12
+    type: vless
+    server: 211.48.77.114
+    port: 11265
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA 9
+    type: vless
+    server: 192.0.54.156
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.fgfw.de5.net
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.de5.net
+  - name: 🇰🇷 韩国 | KOR 5
+    type: vless
+    server: 211.238.83.146
+    port: 32641
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇿🇦 南非 | ZAF
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: 🇰🇷 韩国 | KOR 15
+    type: vless
+    server: 118.42.204.220
+    port: 12281
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA 3
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇫🇷 法国 | FRA 3
+    type: vless
+    server: 89.208.113.120
+    port: 8082
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: 🇯🇵 日本 | JPN
+    type: ss
+    server: iepl.huli168.com
+    port: 19822
+    cipher: aes-256-gcm
+    password: g4JtpkuxkwRH4jhj
+  - name: 🇭🇰 香港 | HKG
+    type: vless
+    server: 83.229.123.173
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA 14
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇺🇸 美国 | USA
+    type: vless
+    server: 68.64.179.96
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR 7
+    type: vless
+    server: 112.167.47.83
+    port: 23297
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA_1
+    type: vless
+    server: 68.64.179.243
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR
+    type: vless
+    server: 222.113.157.240
+    port: 11310
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.fgfw.ccwu.cc
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.ccwu.cc
+  - name: 🇰🇷 韩国 | KOR_1
+    type: vless
+    server: 118.42.204.220
+    port: 12281
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR_2
+    type: vless
+    server: 211.238.83.146
+    port: 32641
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA_2
+    type: vless
+    server: 68.64.179.96
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR_3
+    type: vless
+    server: 59.29.89.197
+    port: 20114
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA_3
+    type: ss
+    server: 50.62.90.16
+    port: 443
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\\
+  - name: 🇺🇸 美国 | USA_4
+    type: vless
+    server: 192.0.54.156
+    port: 443
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    network: ws
+    servername: snippet.fgfw.de5.net
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.de5.net
+  - name: 🇸🇪 瑞典 | SWE
+    type: ss
+    server: 51.20.160.11
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed\\
+  - name: 🇺🇸 美国 | USA_5
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇩🇪 德国 | DEU
+    type: ss
+    server: 94.159.98.140
+    port: 443
+    cipher: none
+    password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: ylnhh.us.ci
+      path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\\
+  - name: 🇭🇰 香港 | HKG_1
+    type: vless
+    server: 83.229.123.173
+    port: 443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸 美国 | USA_6
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇫🇷 法国 | FRA
+    type: vless
+    server: 89.208.113.120
+    port: 8082
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: 🇩🇪 德国 | DEU_1
+    type: vless
+    server: 45.145.42.170
+    port: 8005
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: 🇰🇷 韩国 | KOR_4
+    type: vless
+    server: 211.48.77.114
+    port: 11265
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷 韩国 | KOR_5
+    type: vless
+    server: 112.167.47.83
+    port: 23297
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    type: trojan
+    server: my01.jsylianjie6.com
+    port: 45720
+    password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+    sni: jsygouer.weixin-baidu-qq.com
+    skip-cert-verify: true
+    tls: true
+  - name: 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+    type: vless
+    server: 121.166.253.13
+    port: 30038
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇰🇷_KR_韩国->🇺🇸_US_美国
+    type: vless
+    server: 211.184.116.84
+    port: 50000
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇺🇸_US_美国_2
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+    type: vless
+    server: 89.208.113.120
+    port: 8082
+    uuid: 00000000-0000-4000-8000-000000000000
+    network: ws
+    servername: sub.mot.ip-ddns.com
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: sub.mot.ip-ddns.com
+  - name: 🇺🇸_US_美国_3
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇬🇧_GB_英国->🇨🇳_CN_中国
+    type: vless
+    server: 83.229.121.78
+    port: 8443
+    uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+    network: ws
+    servername: ylnhh.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /Telegram🇨🇳@WangCai2
+      headers:
+        Host: ylnhh.cc.cd
+  - name: 🇸🇬SG_5 | ⬇️ 6.6MB/s
+    type: vmess
+    server: pub.ap20260228.com
+    port: 64021
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: TW-ss
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK-ss_1
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: " HK-ss_2"
+    type: ss
+    server: cf.008500.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: KR-ss_1
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: JP-ss_1
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: " JP-ss_1"
+    type: ss
+    server: saas.sin.fan
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: HK-ss_2
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: KR-ss_2
+    type: ss
+    server: cf.130519.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: TW-ss_1
+    type: ss
+    server: sub.danfeng.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: " HK-ss_3"
+    type: ss
+    server: cf.877774.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: " HK-ss_4"
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_4
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: " JP-ss_2"
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_5
+    type: ss
+    server: store.ubi.com
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: 🇰🇷KR_2 | ⬇️ 6.4MB/s
+    type: vmess
+    server: pub.ap20260228.com
+    port: 64097
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: SG_1
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: HK_1
+    type: ss
+    server: cf.zhetengsha.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: JP-ss_2
+    type: ss
+    server: cdns.doon.eu.org
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG-ss_6
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 79960b0b-7d31-4263-8915-6511b0e137a8
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed\=2560
+  - name: SG-ss_7
+    type: ss
+    server: cf.090227.xyz
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: SG-ss_8
+    type: ss
+    server: mfa.gov.ua
+    port: 443
+    cipher: none
+    password: 3e96ef7d-8637-42c2-ac73-75182196e755
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: mfvpn.fuchen.indevs.in
+      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560
+  - name: 🇦🇺AU_2 | ⬇️ 6.6MB/s
+    type: vmess
+    server: pub.ap20260228.com
+    port: 64003
+    uuid: a739e782-1682-38a5-9153-aad09d779ae9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇭🇰 香港 02
+    type: vmess
+    server: 103.181.164.237
+    port: 34114
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇺🇸US_10 | ⬇️ 4.4MB/s
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+  - name: " 美國_1"
+    type: trojan
+    server: 172.66.44.230
+    port: 8443
+    password: 8r<[9'l6hAO#8ZQi
+    sni: Koma-YT.PAGeS.Dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /tro8sFW1S91B6sZrM1?ed=2560
+      headers:
+        Host: Koma-YT.PAGeS.Dev
+  - name: 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+    type: anytls
+    server: 45.221.98.14
+    port: 59901
+    password: dongtaiwang.com
+    alpn:
+      - h2
+    skip-cert-verify: true
+    tls: true
+    udp: false
+    client-fingerprint: chrome
+  - name: 🇺🇸US_1 | ⬇️ 5.6MB/s
+    type: vless
+    server: 204.197.163.238
+    port: 43643
+    uuid: ff111801-768c-4d23-8f46-e90ef677c80d
+    servername: www.bing.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: U_AczMjOIM-_AgDZrEtTBrInB4lcZxXpGB5CCNeqSCs
+      short-id: "0708e917"
+  - name: 🇺🇸US_44 | ⬇️ 4.7MB/s
+    type: vless
+    server: 157.254.223.44
+    port: 18959
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    servername: itunes.apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
+      short-id: d557c6895d014075
+  - name: ❓Other_11 | ⬇️ 2.7MB/s
+    type: trojan
+    server: 220.93.106.4
+    port: 11434
+    password: trojan
+    sni: jflsjlaf.pages.dev
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: jflsjlaf.pages.dev
+  - name: 🇺🇸US_12 | ⬇️ 8.3MB/s
+    type: hysteria2
+    server: 157.254.223.24
+    port: 30088
+    password: alvin9999.com
+    sni: apple.com
+    skip-cert-verify: true
+  - name: 🇺🇸US_2 | ⬇️ 4.3MB/s
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: 🇬🇧GB_1|1.2MB/s_1
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: tar.alabama-tigr.info
+  - name: us 🇺🇸_1
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+  - name: 🇳🇱NL_9 | ⬇️ 3.2MB/s
+    type: vless
+    server: 144.31.234.7
+    port: 4546
+    uuid: b52989b9-09dc-4ca0-b722-e6fe3e8a0313
+    servername: enterprise.api-maps.yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3DLDFzq0NAYBMrhDOaMM04A_Ictohao2yWOY1NdrJCk
+  - name: 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+    type: vless
+    server: 198.62.62.248
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: tar.alabama-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+  - name: 🇳🇱NL_4 | ⬇️ 2.9MB/s
+    type: vless
+    server: 141.11.21.219
+    port: 17191
+    uuid: 54635a5b-8638-452a-c9b2-805b157025a8
+    servername: a.sezar.top
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇵🇱PL_3 | ⬇️ 4.1MB/s
+    type: vless
+    server: 144.31.1.238
+    port: 443
+    uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+    servername: pl.fasti.win
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+      short-id: feedbacc
+  - name: 🇵🇱PL_2 | ⬇️ 3.2MB/s
+    type: vless
+    server: 45.144.51.136
+    port: 443
+    uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+    servername: pl.fasti.win
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+      short-id: feedbacc
+  - name: 🇳🇱NL_8 | ⬇️ 2.7MB/s
+    type: vless
+    server: 144.31.234.7
+    port: 4546
+    uuid: 7f37b28b-cfcb-4c2a-ae41-8f2ddc9325dd
+    servername: enterprise.api-maps.yandex.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 3DLDFzq0NAYBMrhDOaMM04A_Ictohao2yWOY1NdrJCk
+  - name: 🇦🇲 亚美尼亚
+    type: vless
+    server: 143.20.236.51
+    port: 443
+    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+      short-id: c39cc7310a
+  - name: 🇳🇱NL_3 | ⬇️ 5.2MB/s
+    type: vless
+    server: 104.18.32.47
+    port: 2052
+    uuid: 5e62ddcf-78c9-4b15-803a-436c8c839ddc
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: oBEDiENt-noiseqJf5ja18yF.wIndLer.CO.UK.
+  - name: 🇨🇭CH_8 | ⬇️ 4.4MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_1i6h1l4sl:NoN480zbmvyftOY9oApbob7BLPrpJrEn
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_4 | ⬇️ 2.5MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: switzerland_hysteria2_fastlane_xlbqcg9r2:KzeOnTHTdcAzstgQICPCQzG12uLvJgaP
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_5 | ⬇️ 3.1MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_k0svv53f6:yqblbDl9396YSmHqhw0t7S04VOESnL3f
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_1 | ⬇️ 4.9MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_y3phbb5eb:8FXcfb2dGzLFFgNvqVZdCWMApn6xfCiV
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_2 | ⬇️ 2.7MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_d0ab36hob:ijQep9aZ2kUAqzKAeTSIW70zJq3FiJvO
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_3 | ⬇️ 2.5MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_dnq9o89yn:p6G9GwfEF7DqKxfBImWNKgW4YXHiDh6B
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_7 | ⬇️ 2.6MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_62hxzxhw6:gpjapMeYWiBsDR3KEun6DrwY0Is3gXay
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇨🇭CH_6 | ⬇️ 2.5MB/s
+    type: hysteria2
+    server: 150.241.78.128
+    port: 1935
+    password: hysteria2_fastlane_81uqqeagr:LepBwrE84qJQqGYctplZF35Z8cSmFDn6
+    sni: de3.h.fastlanehosting.ru
+    skip-cert-verify: false
+  - name: 🇬🇧GB_2 | ⬇️ 3.5MB/s
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇬🇧GB_1 | ⬇️ 3.9MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: US336
+    type: vless
+    server: 198.62.62.124
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: war.connecticut-haloo.info
+    tls: true
+    ws-opts:
+      path: /love
+      headers:
+        Host: war.connecticut-haloo.info
+  - name: 🇬🇧GB_1 | ⬇️ 4.0MB/s
+    type: vless
+    server: 198.62.62.235
+    port: 443
+    uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+    network: ws
+    servername: bank.alaska-tigr.info
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /love
+      headers:
+        Host: bank.alaska-tigr.info
+  - name: 🇫🇮FI_2 | ⬇️ 4.2MB/s
+    type: vless
+    server: fin.rokvpn.ru
+    port: 8443
+    uuid: 43e322c8-e044-4625-a560-9bfec45e0eae
+    servername: yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+  - name: UK23
+    type: vless
+    server: 104.18.32.47
+    port: 2052
+    uuid: 2271c50f-ac7a-4d7f-8b04-64085b0daa56
+    network: http
+    tls: false
+    http-opts:
+      path:
+        - /pabloping
+      headers:
+        Host:
+          - s2.nakosgol.com
+  - name: 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+    type: vless
+    server: mx2.tehrantolidi.ir
+    port: 80
+    uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
+    network: ws
+    tls: false
+    ws-opts:
+      path: /site
+      headers:
+        Host: cdn123.global.ssl.fastly.net
+  - name: 🇳🇱NL_4 | ⬇️ 9.5MB/s
+    type: tuic
+    server: ip1.758733.xyz
+    port: 10088
+    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+    password: dongtaiwang.com
+    sni: apple.com
+    alpn:
+      - h3
+    congestion-controller: bbr
+    skip-cert-verify: false
+    disable-sni: false
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - KR-ss
+      - HK-ss
+      - " HK-ss"
+      - SG
+      - " HK-ss_1"
+      - " JP-ss"
+      - SG-ss
+      - HK
+      - SG-ss_1
+      - SG-ss_2
+      - SG-ss_3
+      - JP-ss
+      - 美国021
+      - 美国021_1
+      - 美国021_2
+      - 美国021_3
+      - 美国021_4
+      - 美国021_5
+      - 美国021_6
+      - 美国021_7
+      - 美国021_8
+      - 美国021_9
+      - 美国021_10
+      - " 美國"
+      - 英国023
+      - 美国021_11
+      - 英国030
+      - 美国024
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s
+      - 美国025
+      - 波兰
+      - 🇺🇸US_335 | ⬇️ 1.8MB/s
+      - us 🇺🇸
+      - 美国021_12
+      - 美国021_13
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1
+      - 🇬🇧GB_1|1.2MB/s
+      - speedtest 201045
+      - 🇺🇸US_1 | ⬇️ 1.4MB/s
+      - 🇦🇲 亚美尼亚1
+      - 美国021_14
+      - 美国028
+      - 美国021_15
+      - 美国026
+      - 美国029
+      - 🇺🇸_US_美国
+      - US
+      - 🇳🇱NL_2 | ⬇️ 3.6MB/s
+      - 🇬🇧GB_1 | ⬇️ 2.5MB/s
+      - speedtest 12
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s
+      - 美国021_16
+      - 美国021_17
+      - VLESS-73 | free-nodes
+      - 美国021_18
+      - 美国021_19
+      - 英国027
+      - 🇺🇸_US_美国_1
+      - 美国031
+      - 美国031_1
+      - 美国031_2
+      - 美国031_3
+      - 美国031_4
+      - 美国031_5
+      - 美国031_6
+      - 日本031
+      - 美国031_7
+      - 美国031_8
+      - 美国031_9
+      - 美国031_10
+      - 美国031_11
+      - 美国031_12
+      - 美国031_13
+      - 美国031_14
+      - 美国031_15
+      - 美国031_16
+      - 美国031_17
+      - 美国031_18
+      - 美国031_19
+      - 美国031_20
+      - 美国031_21
+      - 美国031_22
+      - 美国046
+      - 美国043
+      - 英国044
+      - 英国045
+      - 美国031_23
+      - 美国049
+      - 英国042
+      - 英国041
+      - 美国031_24
+      - 美国031_25
+      - 美国031_26
+      - 美国031_27
+      - 美国047
+      - 美国048
+      - 美国031_28
+      - 美国031_29
+      - 韩国031
+      - 美国031_30
+      - 香港031
+      - 俄罗斯031
+      - 新加坡031
+      - 美国031_31
+      - 美国031_32
+      - US VLESS-57 | free-nodes
+      - VLESS-110 | free-nodes
+      - DE VLESS-50 | free-nodes
+      - GB VLESS-56 | free-nodes
+      - 英国 12
+      - 亚太地区 13
+      - US_ab359_0057
+      - KR_ab359_0046
+      - KR_ab359_0039
+      - US_ab359_0056
+      - KR_ab359_0024
+      - KR_ab359_0037
+      - HK_ab359_0015
+      - US_ab359_0054
+      - KR_ab359_0019
+      - 🇺🇸 美国 | USA 10
+      - 🇰🇷 韩国 | KOR 9
+      - 🇰🇷 韩国 | KOR 12
+      - 🇺🇸 美国 | USA 9
+      - 🇰🇷 韩国 | KOR 5
+      - 🇿🇦 南非 | ZAF
+      - 🇰🇷 韩国 | KOR 15
+      - 🇺🇸 美国 | USA 3
+      - 🇫🇷 法国 | FRA 3
+      - 🇯🇵 日本 | JPN
+      - 🇭🇰 香港 | HKG
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA
+      - 🇰🇷 韩国 | KOR 7
+      - 🇺🇸 美国 | USA_1
+      - 🇰🇷 韩国 | KOR
+      - 🇰🇷 韩国 | KOR_1
+      - 🇰🇷 韩国 | KOR_2
+      - 🇺🇸 美国 | USA_2
+      - 🇰🇷 韩国 | KOR_3
+      - 🇺🇸 美国 | USA_3
+      - 🇺🇸 美国 | USA_4
+      - 🇸🇪 瑞典 | SWE
+      - 🇺🇸 美国 | USA_5
+      - 🇩🇪 德国 | DEU
+      - 🇭🇰 香港 | HKG_1
+      - 🇺🇸 美国 | USA_6
+      - 🇫🇷 法国 | FRA
+      - 🇩🇪 德国 | DEU_1
+      - 🇰🇷 韩国 | KOR_4
+      - 🇰🇷 韩国 | KOR_5
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇰🇷_KR_韩国->🇰🇵_KP_朝鲜
+      - 🇰🇷_KR_韩国->🇺🇸_US_美国
+      - 🇺🇸_US_美国_2
+      - 🇷🇺_RU_俄罗斯->🇺🇸_US_美国
+      - 🇺🇸_US_美国_3
+      - 🇬🇧_GB_英国->🇨🇳_CN_中国
+      - 🇸🇬SG_5 | ⬇️ 6.6MB/s
+      - TW-ss
+      - HK-ss_1
+      - " HK-ss_2"
+      - KR-ss_1
+      - JP-ss_1
+      - " JP-ss_1"
+      - HK-ss_2
+      - KR-ss_2
+      - TW-ss_1
+      - " HK-ss_3"
+      - " HK-ss_4"
+      - SG-ss_4
+      - " JP-ss_2"
+      - SG-ss_5
+      - 🇰🇷KR_2 | ⬇️ 6.4MB/s
+      - SG_1
+      - HK_1
+      - JP-ss_2
+      - SG-ss_6
+      - SG-ss_7
+      - SG-ss_8
+      - 🇦🇺AU_2 | ⬇️ 6.6MB/s
+      - 🇭🇰 香港 02
+      - 🇺🇸US_10 | ⬇️ 4.4MB/s
+      - " 美國_1"
+      - 🇺🇸US_332 | ⬇️ 2.1MB/s_1
+      - 🇺🇸US_1 | ⬇️ 5.6MB/s
+      - 🇺🇸US_44 | ⬇️ 4.7MB/s
+      - ❓Other_11 | ⬇️ 2.7MB/s
+      - 🇺🇸US_12 | ⬇️ 8.3MB/s
+      - 🇺🇸US_2 | ⬇️ 4.3MB/s
+      - 🇬🇧GB_1|1.2MB/s_1
+      - us 🇺🇸_1
+      - 🇳🇱NL_9 | ⬇️ 3.2MB/s
+      - 🇺🇸US_1 | ⬇️ 2.9MB/s_1_1
+      - 🇳🇱NL_4 | ⬇️ 2.9MB/s
+      - 🇵🇱PL_3 | ⬇️ 4.1MB/s
+      - 🇵🇱PL_2 | ⬇️ 3.2MB/s
+      - 🇳🇱NL_8 | ⬇️ 2.7MB/s
+      - 🇦🇲 亚美尼亚
+      - 🇳🇱NL_3 | ⬇️ 5.2MB/s
+      - 🇨🇭CH_8 | ⬇️ 4.4MB/s
+      - 🇨🇭CH_4 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_5 | ⬇️ 3.1MB/s
+      - 🇨🇭CH_1 | ⬇️ 4.9MB/s
+      - 🇨🇭CH_2 | ⬇️ 2.7MB/s
+      - 🇨🇭CH_3 | ⬇️ 2.5MB/s
+      - 🇨🇭CH_7 | ⬇️ 2.6MB/s
+      - 🇨🇭CH_6 | ⬇️ 2.5MB/s
+      - 🇬🇧GB_2 | ⬇️ 3.5MB/s
+      - 🇬🇧GB_1 | ⬇️ 3.9MB/s
+      - US336
+      - 🇬🇧GB_1 | ⬇️ 4.0MB/s
+      - 🇫🇮FI_2 | ⬇️ 4.2MB/s
+      - UK23
+      - 🇳🇱NL_7 | ⬇️ 8.3MB/s_1
+      - 🇳🇱NL_4 | ⬇️ 9.5MB/s
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
