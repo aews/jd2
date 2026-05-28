@@ -1,0 +1,3223 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+proxies:
+  - name: 美国37
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VLESS-360 | free-nodes
+    type: vless
+    server: 178.215.238.148
+    port: 8443
+    uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+    servername: eh.vk.com
+    tls: true
+    reality-opts:
+      public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+      short-id: 478dc6
+    udp: true
+  - name: US
+    type: vless
+    server: 89.144.35.230
+    port: 54582
+    uuid: 5cfc52bc-e701-4160-89df-930a0c040576
+    encryption: mlkem768x25519plus.native.0rtt.0Rs8kQdBBMcc2SywqxkhzNVVzyIt_OZaYDNplvTPJKOwxAumLyogdAmy-lLJdlpIerxoMMZs2dlOCoI2H_igvKVg-1lc8Pge2EY-eki2tMPCzEhec7hFnVoDRydhygEXaAaebBpipjMntKVHqLJzwKomw5d-O0kAGaiF5nYPi-SU3NEBAXUPEWi9nMZeOEYPzzthXAcIVWw7yDlrGrOJQSVRyNmcUppT9hAwoNMPe2O5z0IN3rOdd7c3soKJ8oU6gwY38ynGbMEXGQqIBRWeYPYaptddWUZP28tus9xTwKQkIfeWWjsGOZcqGJMRRPevlIxRbfcAAJuCeTiz4yErDFsoMBYdzQl3BzIIcimWDEQIXZJCR6yyLSyJj8Fva7AgcAeg5BZs6_ZQdQFZfZpwjrwmp1kbdakCf-AzR9zBrOtR35IElzgBsgavbgZVY4B1THZ7DvFQVAq3hupm6_gaAaxg42qsleKyzPEs00VY-8DLRjauukNzTigjhfqom8liJnp8aALEnXhu7rdPIWuM91WEz4uTmbxBvARzuUAe7LceQtqiaHmebrp8N0mOKsSyh2PDVAmbWtjHCXJeDhhCMPUYXuiwUVICeUZV1TZxjmZ_xFFL8JZ8vAtewzs9AkiLXJaHNdIBbQRW5qx5BQfMM5vKjYhiXCxJugxu0zq57ksRxsF68oSW0jWbHXaF9EY91ABSZystAjitddC6QcGOUtqn6giKSVs2RXwEeNqZEsEELahYcPtM_PmTlXG-3pFfXalmcpC6bcVl14JLgkykbEtDy3qhBNaUa4osqDu4g8EgRVVuJlCFEcOW-qsQZedzkuhXa2UrUSgNBfVMYXCq16iiD6WKyVVww8CKj_WsPlyNrKIdu8RKENo_HZHN5gPEkgIGWvdpUVyJVbMHlGQ8wVKFDMgn3TyCmCx2_dXM0_eQDqjI3mXAonbAoFttwDhfbpcK4FjPWSkHZrMfAQU1QeodFxqBvBe8MMw1bLSu_mE8beORjEpmtWFr08O0zeUqBkKdOBwahQnB7mBx17JnjYSH0KZT2KF29SiBudHKz7mbThIxhglQH1hSfmSWs0k_d1uCR9Qvylsns9a3j4uwcvUFtZam7iVk2HxG-vMOihIYYomSALwNU0IN01Z3qddbW5uDdtIE0yA2fVVOxjMKVMeYybtarviaCdfNmvyJ4MrJUzoS82cp6TuOYgMZ8hosGMOH1xTMCZIMc9mf4UCRJqA3cRMH0PFj_ugQ62ohDld1dyZADdQx2igtUoYnjLKcIHVdTOp36TqaofugLKwF_aJSUmhi_Kheaju28kZskBaebUqT9VPBqcqYozdvXeeG8hUT6eiMAKSML4jHIJeYOpjOHhYNUEm9b4ATJOwstyQgQmE-P3teIQeYYRcimLpjCTczISEQJcUg68e3CgA8GCoLIaZVsmYKDMxbPJu7bWygU5bBH0Gc6sqf7uNy3kI0nEtAGNAUs6y9TFROQ2BgNeSMucRVNXZ1ePpJs8mx_xRn2ODAn0hImPlLiuOHniCPE_zni6TSyL8Typ11OvyVBIrIrAxWZwREOPs5lXV17t8
+    network: xhttp
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
+      short-id: 225e2cc8
+    udp: true
+    xhttp-opts:
+      path: /5cfc52bc-e701-4160-89df-930a0c040576-xh
+  - name: VLESS-857 | free-nodes
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: 台湾31
+    type: ss
+    server: r3mrcg007117fb8.cybervena.com
+    port: 50099
+    cipher: chacha20-ietf-poly1305
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+    udp: true
+  - name: 美国33
+    type: vless
+    server: up2-df6.pages.dev
+    port: 443
+    uuid: ce69190e-935a-4394-9e5e-2ab2872ba242
+    network: ws
+    servername: up2-df6.pages.dev
+    tls: true
+    ws-opts:
+      path: /uTZSXPBI2IfoxF86
+    udp: true
+  - name: 德国34
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国35
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国36
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国37
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国38
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国39
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国40
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国41
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国42
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国43
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国44
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国45
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国46
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国47
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国48
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国49
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国50
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国51
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国52
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国53
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国54
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国55
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: <nil>
+    udp: true
+  - name: 英国56
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国57
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国58
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国59
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国60
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: SS-15 | free-nodes
+    type: ss
+    server: r3mrcg007117fb8.cybervena.com
+    port: 50099
+    cipher: chacha20-ietf-poly1305
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+    udp: true
+  - name: TROJAN-194 | free-nodes
+    type: trojan
+    server: www.digitalocean.com
+    port: 443
+    password: d0298536-d670-4045-bbb1-ddd5ea68683e
+    sni: azadnet-5vk.pages.dev
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /azadnet-5vk.pages.dev/?ed=2560&PROT_TYPE=trojan
+    udp: true
+  - name: VMESS-1405 | free-nodes
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VMESS-1410 | free-nodes
+    type: vmess
+    server: 82.198.246.250
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VMESS-1406 | free-nodes
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VLESS-894 | free-nodes
+    type: vless
+    server: 104.25.245.127
+    port: 443
+    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    network: ws
+    servername: juzi.qea.ccwu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        Host: juzi.qea.ccwu.cc
+    udp: true
+  - name: VMESS-1496 | free-nodes
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VMESS-1493 | free-nodes
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VLESS-725 | free-nodes
+    type: vless
+    server: 96.47.238.103
+    port: 443
+    uuid: 6b2bd003-b3fd-4208-83f3-197f9a4d2297
+    servername: www.cloudflare.com
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: EaaPtT7jhK6wTiZKklE7uHMjlege0ZN6TBqgojca2yg
+      short-id: 5a626ceb
+    udp: true
+  - name: VLESS-478 | free-nodes
+    type: vless
+    server: cdn.apizedbdb.pro
+    port: 443
+    uuid: 3e71a2c0-652b-42fe-a30e-aa913a4463f8
+    network: ws
+    servername: de1.apizedbdb.pro
+    tls: true
+    ws-opts:
+      path: /api/v2/sync/data-stream
+    udp: true
+  - name: SS-86 | free-nodes
+    type: ss
+    server: 45.83.130.97
+    port: 53292
+    cipher: chacha20-ietf-poly1305
+    password: hfSE3thwAQqvSIac5xLpUD
+    udp: true
+  - name: VLESS-796 | free-nodes
+    type: vless
+    server: 45.207.201.218
+    port: 443
+    uuid: 8cc59443-9131-41ef-92dc-80c739febd68
+    servername: www.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Q_69xJG-1OPZFDrNLUHpnCgVFkho6WKP3M-tsS0RlVU
+      short-id: 9cbbbcd2
+    udp: true
+  - name: VMESS-1494 | free-nodes
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VLESS-1258 | free-nodes
+    type: vless
+    server: 104.26.6.0
+    port: 8880
+    uuid: hqV2rayNG
+    network: xhttp
+    tls: false
+    udp: true
+    xhttp-opts:
+      path: /HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG-HqV2RayNG?ed=1024
+      host: belkharevaslshodim.fars-daxter.ir
+      mode: auto
+  - name: SS-85 | free-nodes
+    type: ss
+    server: tinkered-pennies-puppies.freesocks.work
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: hbGrpfvNrJsUmKmPbR3iY2
+    udp: true
+  - name: VLESS-978 | free-nodes
+    type: vless
+    server: connected22.orangebaby.ir
+    port: 443
+    uuid: b545baeb-dc72-4163-a21e-50f3ec46b013
+    network: ws
+    servername: a10.file700.pw
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /bhjvbhj
+      headers:
+        Host: a10.file700.pw
+    udp: true
+  - name: VLESS-1001 | free-nodes
+    type: vless
+    server: 45.139.78.77
+    port: 443
+    uuid: bbf07169-8c80-485b-83d5-93b87a882219
+    servername: sellflow.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    udp: true
+  - name: VLESS-828 | free-nodes
+    type: vless
+    server: 87.120.93.131
+    port: 443
+    uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+    servername: sub.sbrf-cdn342.ru
+    tls: true
+    client-fingerprint: qq
+    udp: true
+  - name: VMESS-1495 | free-nodes
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6004
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: VLESS-618 | free-nodes
+    type: vless
+    server: 90.156.254.164
+    port: 19562
+    uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+      short-id: 9e
+    udp: true
+  - name: VLESS-960 | free-nodes
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: VLESS-1099 | free-nodes
+    type: vless
+    server: nether1cxc.chickenkiller.com
+    port: 443
+    uuid: d78c12c4-6927-40b8-8550-ed9be00334da
+    servername: nether1cxc.chickenkiller.com
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: MFedImeNi-4keZx_rkV8WL6jjY6sLncSaXgNjpUBPGo
+      short-id: 8917bfb9900788d5
+    udp: true
+  - name: RU VLESS-848 | free-nodes
+    type: vless
+    server: fra.gorhub.ru
+    port: 443
+    uuid: 9cbd238d-6a56-419a-bdc5-101fdab421ad
+    servername: stackoverflow.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 4S6qXLdepEjgOeFBIbZmC-4ChOqGgM9l4vEedKw8rVk
+      short-id: be0ce047
+    udp: true
+  - name: VLESS-917 | free-nodes
+    type: vless
+    server: ddfs.ummapeople.online
+    port: 443
+    uuid: ac195240-6005-412b-9829-1e56e5d5c52a
+    servername: ddfs.ummapeople.online
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: NPt7NbrWjFl5Uq8xIuolxDDJFTzj5x5jwmiSTRPuuD8
+    udp: true
+  - name: VLESS-964 | free-nodes
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: VLESS-1244 | free-nodes
+    type: vless
+    server: 194.226.169.36
+    port: 443
+    uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+      short-id: b8aa
+    udp: true
+  - name: VLESS-591 | free-nodes
+    type: vless
+    server: 147.45.145.127
+    port: 443
+    uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc
+      short-id: 52a6
+    udp: true
+  - name: VLESS-962 | free-nodes
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: VLESS-283 | free-nodes
+    type: vless
+    server: 37.49.225.189
+    port: 443
+    uuid: 01ea3b87-b7b1-4aef-b24a-9c43fbd3b26f
+    servername: sub.sbrf-cdn342.ru
+    tls: true
+    client-fingerprint: qq
+    udp: true
+  - name: VLESS-410 | free-nodes
+    type: vless
+    server: g1.steptofreedom.one
+    port: 443
+    uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
+    servername: g1.steptofreedom.one
+    tls: true
+    flow: xtls-rprx-vision
+    reality-opts:
+      public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+      short-id: 6d6f13013d3e1d0c
+    udp: true
+  - name: VLESS-963 | free-nodes
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: chrome
+    udp: true
+  - name: VLESS-961 | free-nodes
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: VLESS-429 | free-nodes
+    type: vless
+    server: 130.49.219.126
+    port: 8443
+    uuid: 2ee2b77f-e4cd-4e5d-af22-f9d919eeadd5
+    servername: at16.fastlanehosting.ru
+    tls: true
+    client-fingerprint: chrome
+    udp: true
+  - name: VLESS-592 | free-nodes
+    type: vless
+    server: 147.45.145.127
+    port: 443
+    uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc
+      short-id: 52a6
+    udp: true
+  - name: VLESS-959 | free-nodes
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: VLESS-409 | free-nodes
+    type: vless
+    server: g1.steptofreedom.one
+    port: 443
+    uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
+    servername: g1.steptofreedom.one
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+      short-id: 6d6f13013d3e1d0c
+    udp: true
+  - name: VLESS-432 | free-nodes
+    type: vless
+    server: 144.31.30.131
+    port: 8443
+    uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
+    servername: eh.vk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
+      short-id: 18730e64df45
+    udp: true
+  - name: VLESS-433 | free-nodes
+    type: vless
+    server: 144.31.30.131
+    port: 8443
+    uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
+    servername: eh.vk.com
+    tls: true
+    reality-opts:
+      public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
+      short-id: 18730e64df45
+    udp: true
+  - name: VLESS-619 | free-nodes
+    type: vless
+    server: 90.156.254.164
+    port: 19562
+    uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+      short-id: 9e
+    udp: true
+  - name: VLESS-831 | free-nodes
+    type: vless
+    server: 87.120.93.244
+    port: 443
+    uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+    servername: sub.sbrf-cdn342.ru
+    tls: true
+    client-fingerprint: qq
+    udp: true
+  - name: TROJAN-207 | free-nodes
+    type: trojan
+    server: 165.215.250.14
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: VLESS-922 | free-nodes
+    type: vless
+    server: 45.130.125.76
+    port: 443
+    uuid: ada4ea8a-41d8-41b2-bcf5-9bf961b7d676
+    network: ws
+    servername: cdn12.kaiserping.site
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: cdn12.kaiserping.site
+    udp: true
+  - name: VLESS-879 | free-nodes
+    type: vless
+    server: temp2.sacred5057.ir
+    port: 443
+    uuid: a1f685f2-3832-4e2d-9886-eee848d6a590
+    network: ws
+    servername: kherssiah.sacred3442.ir
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /P2JbxBsvWbIiF1
+      headers:
+        Host: kherssiah.sacred3442.ir
+    udp: true
+  - name: VLESS-427 | free-nodes
+    type: vless
+    server: 185.18.250.127
+    port: 2096
+    uuid: 2ee26119-94e5-40b4-ba3a-16354021b600
+    network: ws
+    servername: 69565ce3109804e7813f98ee.mmdbay.blog
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /graphql
+      headers:
+        Host: 69565ce3109804e7813f98ee.mmdbay.blog
+    udp: true
+  - name: TROJAN-241 | free-nodes
+    type: trojan
+    server: www.multiplydose.com
+    port: 443
+    password: humanity
+    sni: www.multiplydose.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: VLESS-866 | free-nodes
+    type: vless
+    server: 185.171.202.76
+    port: 42652
+    uuid: Arshiacomplus
+    network: xhttp
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: firefox
+    udp: true
+    xhttp-opts:
+      path: /skkwkqknsjejejwj
+      host: omm.kotlet.org
+      mode: stream-one
+    alpn:
+      - h2
+      - http/1.1
+  - name: VLESS-749 | free-nodes
+    type: vless
+    server: speedtest.net
+    port: 80
+    uuid: 7903e1c8-13c7-4091-9a17-253bddad208e
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: Asaaabi.global.ssl.fastly.net
+    udp: true
+  - name: 亚太地区1
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 亚太地区2
+    type: vmess
+    server: dotu-hkv1.kunlun03dns.com
+    port: 11103
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 俄罗斯3
+    type: vless
+    server: 194.226.169.36
+    port: 443
+    uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+      short-id: b8aa
+    udp: true
+  - name: 俄罗斯4
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 英国5
+    type: vless
+    server: 31.76.120.162
+    port: 443
+    uuid: 05e9d254-8ea8-4097-9450-d4aefc44bd7e
+    servername: www.sony.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: MBkIKCORF_f5gqwnugFO7K4HUR8HAKPUuYVIarrQNU0
+      short-id: bfc5
+    udp: true
+  - name: 俄罗斯6
+    type: vless
+    server: 90.156.254.164
+    port: 19562
+    uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+      short-id: 9e
+    udp: true
+  - name: 美国7
+    type: vless
+    server: 144.31.30.131
+    port: 8443
+    uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
+    servername: eh.vk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
+      short-id: 18730e64df45
+    udp: true
+  - name: 亚太地区8
+    type: vmess
+    server: dotu-krv1.kunlun03dns.com
+    port: 11144
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国9
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6004
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: GB_7f171_0018
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS 3
+    type: vless
+    server: 185.139.214.151
+    port: 443
+    uuid: 9270ef77-592f-11f1-98cc-54db13ea7d40
+    servername: cloudcdn-m9-15.cdn.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: randomized
+    reality-opts:
+      public-key: APwi9yR-ezZtFU6xj2a3SBoXvEoWOoiRuZSit0N9xWI
+    udp: true
+  - name: 🇻🇳 越南 | VNM 5
+    type: ss
+    server: 45.83.130.97
+    port: 53292
+    cipher: chacha20-ietf-poly1305
+    password: hfSE3thwAQqvSIac5xLpUD
+    udp: true
+  - name: US_7f171_0071
+    type: vless
+    server: 89.117.94.111
+    port: 54495
+    uuid: 2042c7c4-f0c8-48ec-926b-65112b064e2c
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 50IjQtR9zJG_3pXrbQDalYy_D4c7C_A8EEwVx0EfOjM
+      short-id: 5e8c37215982
+    udp: true
+  - name: RU_7f171_0043
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: GB_7f171_0023
+    type: vless
+    server: cz.krevetkavpn.ru
+    port: 443
+    uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
+    servername: www.nvidia.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw
+      short-id: 6ba8f65dee6e
+    udp: true
+  - name: KR_7f171_0031
+    type: trojan
+    server: 121.154.96.50
+    port: 18000
+    password: 433e785b-2077-47f7-a43d-985f63dd18d1
+    sni: vpn.rnmcnm.com
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: vpn.rnmcnm.com
+    udp: true
+  - name: 🇬🇧 英国 | GBR
+    type: ss
+    server: 89.185.84.34
+    port: 31348
+    cipher: chacha20-ietf-poly1305
+    password: AQGAAMQLZoxMT4EUxNPuFwKImsAviZTHTEMmHFlRrDKJpMnS
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS 4
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: RU_7f171_0042
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    udp: true
+  - name: GB_7f171_0019
+    type: vless
+    server: 31.76.120.162
+    port: 443
+    uuid: 05e9d254-8ea8-4097-9450-d4aefc44bd7e
+    servername: www.sony.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: MBkIKCORF_f5gqwnugFO7K4HUR8HAKPUuYVIarrQNU0
+      short-id: bfc5
+    udp: true
+  - name: BG_7f171_0002
+    type: vless
+    server: 178.215.238.148
+    port: 8443
+    uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+    servername: eh.vk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+      short-id: 478dc6
+    udp: true
+  - name: KR_7f171_0032
+    type: trojan
+    server: 14.53.107.138
+    port: 29999
+    password: 433e785b-2077-47f7-a43d-985f63dd18d1
+    sni: vpn.rnmcnm.com
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: vpn.rnmcnm.com
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS 2
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: RU_7f171_0040
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: KR_7f171_0030
+    type: trojan
+    server: 59.30.42.194
+    port: 12345
+    password: 433e785b-2077-47f7-a43d-985f63dd18d1
+    sni: vpn.rnmcnm.com
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: vpn.rnmcnm.com
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS_1
+    type: vless
+    server: 185.139.214.151
+    port: 443
+    uuid: 9270ef77-592f-11f1-98cc-54db13ea7d40
+    servername: cloudcdn-m9-15.cdn.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: randomized
+    reality-opts:
+      public-key: APwi9yR-ezZtFU6xj2a3SBoXvEoWOoiRuZSit0N9xWI
+    udp: true
+  - name: 🇺🇸 美国 | USA
+    type: vless
+    server: 134.33.73.249
+    port: 54254
+    uuid: acba684c-4098-4eca-f519-828b09f96464
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4
+      short-id: db35ffdc
+    udp: true
+  - name: 🇻🇳 越南 | VNM
+    type: ss
+    server: 45.83.130.97
+    port: 53292
+    cipher: chacha20-ietf-poly1305
+    password: hfSE3thwAQqvSIac5xLpUD
+    udp: true
+  - name: 🇬🇧 英国 | GBR_1
+    type: ss
+    server: 89.185.84.34
+    port: 31348
+    cipher: chacha20-ietf-poly1305
+    password: AQGAAMQLZoxMT4EUxNPuFwKImsAviZTHTEMmHFlRrDKJpMnS
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS_2
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS_3
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS_4
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇺🇸 美国 | USA_1
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇬🇧_GB_英国
+    type: ss
+    server: 89.185.84.34
+    port: 31348
+    cipher: chacha20-ietf-poly1305
+    password: AQGAAMQLZoxMT4EUxNPuFwKImsAviZTHTEMmHFlRrDKJpMnS
+    udp: true
+  - name: 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    udp: true
+  - name: 🇯🇵 日本 16
+    type: vless
+    server: rt643a.jpvless.yydzx.xyz
+    port: 443
+    uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+    servername: www.bandainamcoent.co.jp
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
+      short-id: 0eb5fb6958f835da
+    udp: true
+  - name: 🇯🇵 日本 15
+    type: vless
+    server: j0uhwj.jpvless.yydzx.xyz
+    port: 443
+    uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+    servername: www.bandainamcoent.co.jp
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
+      short-id: 0eb5fb6958f835da
+    udp: true
+  - name: 🇯🇵 日本 14
+    type: vless
+    server: tu2aq8.jpvless.yydzx.xyz
+    port: 443
+    uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+    servername: www.bandainamcoent.co.jp
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CNUdP4EqYrvDYcw3E3EHCm1flSgKAUaO22XE5F2HAjI
+      short-id: 0eb5fb6958f835da
+    udp: true
+  - name: ✪ 日本 01 v2ray协议
+    type: vmess
+    server: dotu-jpv1.kunlun03dns.com
+    port: 11119
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_1
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_2
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_3
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_1
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_4
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_5
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_6
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_7
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_2
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_8
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_9
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_3
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_10
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_4
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_5
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_6
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_7
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国_11
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_8
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_9
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    servername: <nil>
+    udp: true
+  - name: 德国
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸美国US-42
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 韩国
+    type: trojan
+    server: 121.178.83.161
+    port: 26214
+    password: GKHWMe2R4qwNcNxu6l3KMkdd
+    sni: vpn1.rnmcnm.com
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /trj-ws
+      headers:
+        Host: vpn1.rnmcnm.com
+    udp: true
+  - name: 美国_10
+    type: trojan
+    server: 112.166.213.102
+    port: 16993
+    password: GKHWMe2R4qwNcNxu6l3KMkdd
+    sni: vpn1.rnmcnm.com
+    skip-cert-verify: false
+    tls: true
+    ws-opts:
+      path: /trj-ws
+      headers:
+        Host: vpn1.rnmcnm.com
+    udp: true
+  - name: ✪ 台湾 01 v2ray协议
+    type: vmess
+    server: dotu-twv1.kunlun03dns.com
+    port: 11111
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸US_5|2.0MB/s
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    udp: true
+  - name: ✪ 台湾 02 v2ray协议
+    type: vmess
+    server: dotu-twv1.kunlun03dns.com
+    port: 11112
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: ✪ 美国 03 v2ray协议
+    type: vmess
+    server: dotu-usv1.kunlun03dns.com
+    port: 11129
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: US_1
+    type: vless
+    server: 194.226.169.36
+    port: 443
+    uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+      short-id: b8aa
+    udp: true
+  - name: 🇺🇸US_8|2.7MB/s
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: 🇩🇪 德国 01
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇺🇸 美国 21
+    type: vless
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: VLESS-1026 | free-nodes
+    type: vless
+    server: 194.226.169.36
+    port: 443
+    uuid: fae3277c-0541-4ae9-bbbb-8247453ea652
+    servername: yahoo.com
+    tls: true
+    reality-opts:
+      public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+      short-id: b8aa
+    udp: true
+  - name: 🇩🇪DE_2|2.4MB/s
+    type: vless
+    server: 178.215.238.148
+    port: 8443
+    uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+    servername: eh.vk.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+      short-id: 478dc6
+    udp: true
+  - name: 🇺🇸US_13|2.3MB/s
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: 🇺🇸 美国 26
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    udp: true
+  - name: 🇬🇧 英国 03
+    type: vless
+    server: 31.76.120.162
+    port: 443
+    uuid: 05e9d254-8ea8-4097-9450-d4aefc44bd7e
+    servername: www.sony.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+    reality-opts:
+      public-key: MBkIKCORF_f5gqwnugFO7K4HUR8HAKPUuYVIarrQNU0
+      short-id: bfc5
+    udp: true
+  - name: US_2
+    type: vless
+    server: 89.144.35.230
+    port: 54582
+    uuid: 5cfc52bc-e701-4160-89df-930a0c040576
+    encryption: mlkem768x25519plus.native.0rtt.0Rs8kQdBBMcc2SywqxkhzNVVzyIt_OZaYDNplvTPJKOwxAumLyogdAmy-lLJdlpIerxoMMZs2dlOCoI2H_igvKVg-1lc8Pge2EY-eki2tMPCzEhec7hFnVoDRydhygEXaAaebBpipjMntKVHqLJzwKomw5d-O0kAGaiF5nYPi-SU3NEBAXUPEWi9nMZeOEYPzzthXAcIVWw7yDlrGrOJQSVRyNmcUppT9hAwoNMPe2O5z0IN3rOdd7c3soKJ8oU6gwY38ynGbMEXGQqIBRWeYPYaptddWUZP28tus9xTwKQkIfeWWjsGOZcqGJMRRPevlIxRbfcAAJuCeTiz4yErDFsoMBYdzQl3BzIIcimWDEQIXZJCR6yyLSyJj8Fva7AgcAeg5BZs6_ZQdQFZfZpwjrwmp1kbdakCf-AzR9zBrOtR35IElzgBsgavbgZVY4B1THZ7DvFQVAq3hupm6_gaAaxg42qsleKyzPEs00VY-8DLRjauukNzTigjhfqom8liJnp8aALEnXhu7rdPIWuM91WEz4uTmbxBvARzuUAe7LceQtqiaHmebrp8N0mOKsSyh2PDVAmbWtjHCXJeDhhCMPUYXuiwUVICeUZV1TZxjmZ_xFFL8JZ8vAtewzs9AkiLXJaHNdIBbQRW5qx5BQfMM5vKjYhiXCxJugxu0zq57ksRxsF68oSW0jWbHXaF9EY91ABSZystAjitddC6QcGOUtqn6giKSVs2RXwEeNqZEsEELahYcPtM_PmTlXG-3pFfXalmcpC6bcVl14JLgkykbEtDy3qhBNaUa4osqDu4g8EgRVVuJlCFEcOW-qsQZedzkuhXa2UrUSgNBfVMYXCq16iiD6WKyVVww8CKj_WsPlyNrKIdu8RKENo_HZHN5gPEkgIGWvdpUVyJVbMHlGQ8wVKFDMgn3TyCmCx2_dXM0_eQDqjI3mXAonbAoFttwDhfbpcK4FjPWSkHZrMfAQU1QeodFxqBvBe8MMw1bLSu_mE8beORjEpmtWFr08O0zeUqBkKdOBwahQnB7mBx17JnjYSH0KZT2KF29SiBudHKz7mbThIxhglQH1hSfmSWs0k_d1uCR9Qvylsns9a3j4uwcvUFtZam7iVk2HxG-vMOihIYYomSALwNU0IN01Z3qddbW5uDdtIE0yA2fVVOxjMKVMeYybtarviaCdfNmvyJ4MrJUzoS82cp6TuOYgMZ8hosGMOH1xTMCZIMc9mf4UCRJqA3cRMH0PFj_ugQ62ohDld1dyZADdQx2igtUoYnjLKcIHVdTOp36TqaofugLKwF_aJSUmhi_Kheaju28kZskBaebUqT9VPBqcqYozdvXeeG8hUT6eiMAKSML4jHIJeYOpjOHhYNUEm9b4ATJOwstyQgQmE-P3teIQeYYRcimLpjCTczISEQJcUg68e3CgA8GCoLIaZVsmYKDMxbPJu7bWygU5bBH0Gc6sqf7uNy3kI0nEtAGNAUs6y9TFROQ2BgNeSMucRVNXZ1ePpJs8mx_xRn2ODAn0hImPlLiuOHniCPE_zni6TSyL8Typ11OvyVBIrIrAxWZwREOPs5lXV17t8
+    network: xhttp
+    servername: apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: kfw5DgkyKiovC3dzb-o2PUYnZPnbYvbx2IwERUv9czY
+      short-id: 225e2cc8
+    udp: true
+    xhttp-opts:
+      path: /5cfc52bc-e701-4160-89df-930a0c040576-xh
+  - name: 🇬🇧 英国 01
+    type: vless
+    server: 194.238.57.104
+    port: 443
+    uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+    servername: www.icloud.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
+      short-id: 5d
+    udp: true
+  - name: 🇫🇷 法国 07
+    type: vless
+    server: 194.226.169.36
+    port: 443
+    uuid: 4706d9c3-eec0-4666-9d84-e608a200e872
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: i4Mx_tDND0Xxac3WyA7HgT9rvXdZlXpm5m1EGiQF-Uk
+      short-id: b8aa
+    udp: true
+  - name: 🇬🇧 英国 08
+    type: vless
+    server: swe-8t.freeonline.pro
+    port: 443
+    uuid: 980231fb-4372-5c81-b696-20aa34d33af0
+    servername: www.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+      short-id: bdac121c7debdaba
+    udp: true
+  - name: 🇬🇧 英国 02
+    type: vless
+    server: 148.253.211.237
+    port: 443
+    uuid: 980231fb-4372-5c81-b696-20aa34d33af0
+    servername: www.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+      short-id: bdac121c7debdaba
+    udp: true
+  - name: ✪ 新加坡 04 v2ray协议
+    type: vmess
+    server: dotu-sgv1.kunlun03dns.com
+    port: 11138
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰HK_1|2.0MB/s
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_11
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6001
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: ✪ 新加坡 03 v2ray协议
+    type: vmess
+    server: dotu-sgv1.kunlun03dns.com
+    port: 11137
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: ✪ 新加坡 02 v2ray协议
+    type: vmess
+    server: dotu-sgv1.kunlun03dns.com
+    port: 11136
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国_12
+    type: vmess
+    server: gtm-sg-cc54q7d1q01.365cloud0285.com
+    port: 6004
+    uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: ✪ 美国 02 v2ray协议
+    type: vmess
+    server: dotu-usv1.kunlun03dns.com
+    port: 11128
+    uuid: 6b989fce-172e-37a6-b324-3922008b17f9
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 美国37
+      - VLESS-360 | free-nodes
+      - US
+      - VLESS-857 | free-nodes
+      - 台湾31
+      - 美国33
+      - 德国34
+      - 英国35
+      - 美国36
+      - 英国37
+      - 英国38
+      - 英国39
+      - 英国40
+      - 美国41
+      - 英国42
+      - 英国43
+      - 美国44
+      - 英国45
+      - 英国46
+      - 英国47
+      - 德国48
+      - 英国49
+      - 英国50
+      - 英国51
+      - 美国52
+      - 德国53
+      - 英国54
+      - 美国55
+      - 英国56
+      - 美国57
+      - 德国58
+      - 德国59
+      - 英国60
+      - SS-15 | free-nodes
+      - TROJAN-194 | free-nodes
+      - VMESS-1405 | free-nodes
+      - VMESS-1410 | free-nodes
+      - VMESS-1406 | free-nodes
+      - VLESS-894 | free-nodes
+      - VMESS-1496 | free-nodes
+      - VMESS-1493 | free-nodes
+      - VLESS-725 | free-nodes
+      - VLESS-478 | free-nodes
+      - SS-86 | free-nodes
+      - VLESS-796 | free-nodes
+      - VMESS-1494 | free-nodes
+      - VLESS-1258 | free-nodes
+      - SS-85 | free-nodes
+      - VLESS-978 | free-nodes
+      - VLESS-1001 | free-nodes
+      - VLESS-828 | free-nodes
+      - VMESS-1495 | free-nodes
+      - VLESS-618 | free-nodes
+      - VLESS-960 | free-nodes
+      - VLESS-1099 | free-nodes
+      - RU VLESS-848 | free-nodes
+      - VLESS-917 | free-nodes
+      - VLESS-964 | free-nodes
+      - VLESS-1244 | free-nodes
+      - VLESS-591 | free-nodes
+      - VLESS-962 | free-nodes
+      - VLESS-283 | free-nodes
+      - VLESS-410 | free-nodes
+      - VLESS-963 | free-nodes
+      - VLESS-961 | free-nodes
+      - VLESS-429 | free-nodes
+      - VLESS-592 | free-nodes
+      - VLESS-959 | free-nodes
+      - VLESS-409 | free-nodes
+      - VLESS-432 | free-nodes
+      - VLESS-433 | free-nodes
+      - VLESS-619 | free-nodes
+      - VLESS-831 | free-nodes
+      - TROJAN-207 | free-nodes
+      - VLESS-922 | free-nodes
+      - VLESS-879 | free-nodes
+      - VLESS-427 | free-nodes
+      - TROJAN-241 | free-nodes
+      - VLESS-866 | free-nodes
+      - VLESS-749 | free-nodes
+      - 亚太地区1
+      - 亚太地区2
+      - 俄罗斯3
+      - 俄罗斯4
+      - 英国5
+      - 俄罗斯6
+      - 美国7
+      - 亚太地区8
+      - 美国9
+      - GB_7f171_0018
+      - 🇷🇺 俄罗斯 | RUS 3
+      - 🇻🇳 越南 | VNM 5
+      - US_7f171_0071
+      - RU_7f171_0043
+      - GB_7f171_0023
+      - KR_7f171_0031
+      - 🇬🇧 英国 | GBR
+      - 🇷🇺 俄罗斯 | RUS 4
+      - RU_7f171_0042
+      - GB_7f171_0019
+      - BG_7f171_0002
+      - KR_7f171_0032
+      - 🇷🇺 俄罗斯 | RUS 2
+      - 🇷🇺 俄罗斯 | RUS
+      - RU_7f171_0040
+      - KR_7f171_0030
+      - 🇷🇺 俄罗斯 | RUS_1
+      - 🇺🇸 美国 | USA
+      - 🇻🇳 越南 | VNM
+      - 🇬🇧 英国 | GBR_1
+      - 🇷🇺 俄罗斯 | RUS_2
+      - 🇷🇺 俄罗斯 | RUS_3
+      - 🇷🇺 俄罗斯 | RUS_4
+      - 🇺🇸 美国 | USA_1
+      - 🇺🇸_US_美国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国->🇬🇪_GE_格鲁吉亚_1
+      - 🇯🇵 日本 16
+      - 🇯🇵 日本 15
+      - 🇯🇵 日本 14
+      - ✪ 日本 01 v2ray协议
+      - 美国
+      - 英国
+      - 英国_1
+      - 英国_2
+      - 英国_3
+      - 美国_1
+      - 英国_4
+      - 英国_5
+      - 英国_6
+      - 英国_7
+      - 美国_2
+      - 英国_8
+      - 英国_9
+      - 美国_3
+      - 英国_10
+      - 美国_4
+      - 美国_5
+      - 美国_6
+      - 美国_7
+      - 英国_11
+      - 美国_8
+      - 美国_9
+      - 德国
+      - 🇺🇸美国US-42
+      - 韩国
+      - 美国_10
+      - ✪ 台湾 01 v2ray协议
+      - 🇺🇸US_5|2.0MB/s
+      - ✪ 台湾 02 v2ray协议
+      - ✪ 美国 03 v2ray协议
+      - US_1
+      - 🇺🇸US_8|2.7MB/s
+      - 🇩🇪 德国 01
+      - 🇺🇸 美国 21
+      - VLESS-1026 | free-nodes
+      - 🇩🇪DE_2|2.4MB/s
+      - 🇺🇸US_13|2.3MB/s
+      - 🇺🇸 美国 26
+      - 🇬🇧 英国 03
+      - US_2
+      - 🇬🇧 英国 01
+      - 🇫🇷 法国 07
+      - 🇬🇧 英国 08
+      - 🇬🇧 英国 02
+      - ✪ 新加坡 04 v2ray协议
+      - 🇭🇰HK_1|2.0MB/s
+      - 美国_11
+      - ✪ 新加坡 03 v2ray协议
+      - ✪ 新加坡 02 v2ray协议
+      - 美国_12
+      - ✪ 美国 02 v2ray协议
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
+rules:
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
